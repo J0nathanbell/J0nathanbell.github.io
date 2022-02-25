@@ -7,7 +7,6 @@ import {
   mobilePortfolio,
   designingPortfolio
 } from "../../data.js";
-import { Icon } from "@mui/material";
 
 
 export default function Portfolio() {
