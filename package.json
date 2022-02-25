@@ -1,5 +1,5 @@
 {
-  "homepage": "http://J0nathanbell.github.io/portfolio3",
+  "homepage": "https://J0nathanbell.github.io/portfolio3",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -46,7 +46,6 @@
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
-    "gh-pages": "^3.2.3",
-    "jest-watch-typeahead": "^0.6.5"
+    "gh-pages": "^3.2.3"
   }
 }
