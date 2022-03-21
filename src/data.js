@@ -1,85 +1,80 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Team",
-    img: require('./assets/website_content/projects/apps/whatever/team.png')
+    title: "App",
+    img: require('./assets/website_content/projects/apps/whatever/app.gif'),
+    appLink: "https://whateverjb.herokuapp.com/"
   },
   {
     id: 1,
     github: require('./assets/website_content/icons/github.png'),
-    link: "https://whateverjb.herokuapp.com/",
+    link: "https://github.com/J0nathanbell/whatever",
+    heroku: require('./assets/website_content/icons/Heroku.png'),
+    link2: "https://whateverjb.herokuapp.com/",
     icon: require('./assets/website_content/icons/ruby.png'),
     icon2: require('./assets/website_content/icons/rails.png'),
     icon3: require('./assets/website_content/icons/js.png'),
   },
   {
     id: 1,
-    title: "App",
-    img: require('./assets/website_content/projects/apps/whatever/app.gif'),
+    title: "Team",
+    img: require('./assets/website_content/projects/apps/whatever/team.png'),
+    appLink: "https://www.youtube.com/watch?v=jR9xcC7LZD4"
   },
-  {
-    id:1,
-    title: "A movie and meal pairing generater",
-  },
-
 ];
 
 export const webappPortfolio = [
-  {
-    id: 2,
-    title: "Team",
-    img: require('./assets/website_content/projects/apps/whatever/team.png')
-  },
-  {
-    id: 2,
-    tag: "An Air-BnB clone for scairing your pals",
-    title: "A movie and meal pairing generater",
-    img: require('./assets/website_content/projects/apps/whatever/team.png'),
-    icon: require('./assets/website_content/icons/github.png')
-  },
   {
     id: 2,
     title: "App",
     img: require('./assets/website_content/projects/apps/scareBnB/scareBnBDemoVideo.webp'),
     appLink: "https://airbnb-scoomey.herokuapp.com/"
   },
-
+  {
+    id: 2,
+    github: require('./assets/website_content/icons/github.png'),
+    link: "https://github.com/Scoomey/whatever",
+    heroku: require('./assets/website_content/icons/Heroku.png'),
+    link2: "https://airbnb-scoomey.herokuapp.com/",
+    icon: require('./assets/website_content/icons/ruby.png'),
+    icon2: require('./assets/website_content/icons/rails.png'),
+    icon3: require('./assets/website_content/icons/js.png'),
+  },
+  {
+    id: 2,
+    title: "Team",
+    img: require('./assets/website_content/projects/apps/whatever/team.png')
+  },
 ];
 
 export const mobilePortfolio = [
   {
     id: 3,
-    title: "third item",
-    img: require('./assets/arrow.png')
+    title: "App",
+    img: require('./assets/website_content/projects/apps/pokedex/pokemon.gif'),
+    appLink: "https://j0nathanbell.github.io/pokemon/"
   },
   {
     id: 3,
-    title: "third item",
-    img: require('./assets/arrow.png')
+    github: require('./assets/website_content/icons/github.png'),
+    link: "https://github.com/J0nathanbell/pokemon",
+    ghpages: require('./assets/website_content/icons/ghpages.png'),
+    link2: 'https://j0nathanbell.github.io/pokemon/',
+    icon3: require('./assets/website_content/icons/js.png'),
   },
-  {
-    id: 3,
-    title: "third item",
-    img: require('./assets/arrow.png')
-  },
-
 ];
 
 export const designingPortfolio = [
   {
-    id: 4,
-    title: "forth item",
-    img: require('./assets/arrow.png')
+    id: 3,
+    title: "App",
+    img: require('./assets/website_content/projects/apps/rejectionClose/python.gif'),
+    appLink: "https://github.com/J0nathanbell/large_screen_rejection_close"
   },
   {
-    id: 4,
-    title: "forth item",
-    img: require('./assets/arrow.png')
+    id: 3,
+    github: require('./assets/website_content/icons/github.png'),
+    link: "https://github.com/J0nathanbell/large_screen_rejection_close",
+    icon3: require('./assets/website_content/icons/py.png'),
   },
-  {
-    id: 4,
-    title: "forth item",
-    img: require('./assets/arrow.png')
-  },
-
 ];

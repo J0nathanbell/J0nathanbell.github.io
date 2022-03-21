@@ -70,15 +70,22 @@ export default function Portfolio() {
               <img className='mainImage' src={d.img} alt="" />
             </a>
             <h3 className="title">{d.title}</h3>
-            <a className="link" href={d.link}>
-              <img  src={d.github} alt=""/>
-            </a>
-            <h5>Built with...</h5>
+            <h5>Links</h5>
+            <div className="container2">
+              <a className="link" href={d.link}>
+                <img className="hubby" src={d.github} alt=""/>
+              </a>
+              <a className="link2" href={d.link2}>
+              {d.heroku && <img className ="herokuy" src={d.heroku} alt=""/>}
+              {d.ghpages && <img className ="ghpages" src={d.ghpages} alt=""/>}
+              </a>
+            </div>
+            <h5>Built with</h5>
             <div className="icon-container">
-              <img className="icon" src={d.icon} alt=""/>
-              <img className="icon2" src={d.icon2} alt=""/>
-              <img className="icon3" src={d.icon3} alt=""/>
-              <img className="icon4" src={d.icon4} alt=""/>
+              {d.icon && <img className="icon" src={d.icon} alt=""/>}
+              {d.icon2 && <img className="icon2" src={d.icon2} alt=""/>}
+              {d.icon3 && <img className="icon3" src={d.icon3} alt=""/>}
+              {d.icon && <img className="icon4" src={d.icon4} alt=""/>}
             </div>
           </div>
         ))}

@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="left">
         <img src={contactImage} alt="" />
       </div>
-      <h2>Contact.</h2>
+      <h1>Contact.</h1>
       <div className="right">
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Email" />

@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .intro {
-  background-color: white;
+  background-color: navy;
   display: flex;
   padding-top: 10px;
   //  padding top only required for smaller image centering
@@ -13,7 +13,7 @@
 
   .left{
     flex:0.5;
-    background-color: #white;
+    background-color: navy;
     overflow: hidden;
 
     @include mobile {
@@ -23,7 +23,7 @@
     .imgContainer{
       width: 600px;
       height: 600px;
-      background-color: #b5b5b5;
+      background-color: black;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -35,10 +35,7 @@
       }
 
       img{
-
-        width: 100%;
-        border-radius: 50%;
-
+        width: 70%;
         @include mobile {
           height: 80%;
           width: 80%;
@@ -49,7 +46,7 @@
   }
   .right{
     flex:0.5;
-    background-color: white;
+    background-color: navy;
     position: relative;
 
     @include mobile {
