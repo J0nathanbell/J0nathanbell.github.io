@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.daf1d3dd.css",
+    "main.js": "/portfolio/static/js/main.a9cc9369.js",
+    "static/media/python.gif": "/portfolio/static/media/python.df2329a00a1b1794c6b6.gif",
+    "static/media/team.png": "/portfolio/static/media/team.db177f77942f828b71e3.png",
+    "static/media/app.gif": "/portfolio/static/media/app.c8bb1af36c99ec6c97f4.gif",
+    "static/media/pokemon.gif": "/portfolio/static/media/pokemon.ef7b2d848515488cb458.gif",
+    "static/media/coolguy3.png": "/portfolio/static/media/coolguy3.a38ad208e7641de17423.png",
+    "static/media/scareBnBDemoVideo.webp": "/portfolio/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
+    "static/media/js.png": "/portfolio/static/media/js.923275cdf7e3c2565687.png",
+    "static/media/ruby.png": "/portfolio/static/media/ruby.c7bc8aaa300e723f7ef8.png",
+    "static/media/ghpages.png": "/portfolio/static/media/ghpages.e7418b93e4a6c18c6341.png",
+    "static/media/py.png": "/portfolio/static/media/py.f1a07429fcf04073a41e.png",
+    "static/media/rails.png": "/portfolio/static/media/rails.c87f032e560c7a8da82c.png",
+    "static/media/Heroku.png": "/portfolio/static/media/Heroku.567d3fe051c8efaa05b0.png",
+    "static/media/github.png": "/portfolio/static/media/github.2b0a8c046c4080c2482e.png",
+    "static/media/shake.svg": "/portfolio/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
+    "index.html": "/portfolio/index.html",
+    "main.daf1d3dd.css.map": "/portfolio/static/css/main.daf1d3dd.css.map",
+    "main.a9cc9369.js.map": "/portfolio/static/js/main.a9cc9369.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daf1d3dd.css",
+    "static/js/main.a9cc9369.js"
+  ]
+}
