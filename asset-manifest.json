@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio3/static/css/main.b5be1cb9.css",
-    "main.js": "/portfolio3/static/js/main.19189327.js",
-    "static/media/python.gif": "/portfolio3/static/media/python.df2329a00a1b1794c6b6.gif",
-    "static/media/team.png": "/portfolio3/static/media/team.db177f77942f828b71e3.png",
-    "static/media/app.gif": "/portfolio3/static/media/app.c8bb1af36c99ec6c97f4.gif",
-    "static/media/pokemon.gif": "/portfolio3/static/media/pokemon.ef7b2d848515488cb458.gif",
-    "static/media/coolguy3.png": "/portfolio3/static/media/coolguy3.a38ad208e7641de17423.png",
-    "static/media/scareBnBDemoVideo.webp": "/portfolio3/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
-    "static/media/js.png": "/portfolio3/static/media/js.923275cdf7e3c2565687.png",
-    "static/media/ruby.png": "/portfolio3/static/media/ruby.c7bc8aaa300e723f7ef8.png",
-    "static/media/ghpages.png": "/portfolio3/static/media/ghpages.e7418b93e4a6c18c6341.png",
-    "static/media/py.png": "/portfolio3/static/media/py.f1a07429fcf04073a41e.png",
-    "static/media/rails.png": "/portfolio3/static/media/rails.c87f032e560c7a8da82c.png",
-    "static/media/Heroku.png": "/portfolio3/static/media/Heroku.567d3fe051c8efaa05b0.png",
-    "static/media/github.png": "/portfolio3/static/media/github.2b0a8c046c4080c2482e.png",
-    "static/media/shake.svg": "/portfolio3/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
-    "index.html": "/portfolio3/index.html",
-    "main.b5be1cb9.css.map": "/portfolio3/static/css/main.b5be1cb9.css.map",
-    "main.19189327.js.map": "/portfolio3/static/js/main.19189327.js.map"
+    "main.css": "/static/css/main.3063510f.css",
+    "main.js": "/static/js/main.e9487de4.js",
+    "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
+    "static/media/team.png": "/static/media/team.db177f77942f828b71e3.png",
+    "static/media/app.gif": "/static/media/app.c8bb1af36c99ec6c97f4.gif",
+    "static/media/pokemon.gif": "/static/media/pokemon.ef7b2d848515488cb458.gif",
+    "static/media/coolguy3.png": "/static/media/coolguy3.a38ad208e7641de17423.png",
+    "static/media/scareBnBDemoVideo.webp": "/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
+    "static/media/js.png": "/static/media/js.923275cdf7e3c2565687.png",
+    "static/media/ruby.png": "/static/media/ruby.c7bc8aaa300e723f7ef8.png",
+    "static/media/ghpages.png": "/static/media/ghpages.e7418b93e4a6c18c6341.png",
+    "static/media/py.png": "/static/media/py.f1a07429fcf04073a41e.png",
+    "static/media/rails.png": "/static/media/rails.c87f032e560c7a8da82c.png",
+    "static/media/Heroku.png": "/static/media/Heroku.567d3fe051c8efaa05b0.png",
+    "static/media/github.png": "/static/media/github.2b0a8c046c4080c2482e.png",
+    "static/media/shake.svg": "/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
+    "index.html": "/index.html",
+    "main.3063510f.css.map": "/static/css/main.3063510f.css.map",
+    "main.e9487de4.js.map": "/static/js/main.e9487de4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5be1cb9.css",
-    "static/js/main.19189327.js"
+    "static/css/main.3063510f.css",
+    "static/js/main.e9487de4.js"
   ]
 }
