@@ -5,7 +5,7 @@ const data = [
     id: 1,
     icon: require("../../assets/twitter.png"),
     name: "dasdasd",
-    title: "loren itsum",
+    title: "yoyoyoyo",
     img: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fce3beda8-87ef-11eb-a305-6c8dc51a72e0.jpg?crop=2250%2C1266%2C0%2C117&resize=1200",
     desc: "loren itsum",
     featured: false,
