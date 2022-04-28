@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolio{
-  background-color: white;
+  background-color: $backgroundColor2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,6 @@
     }
   }
   .container{
-    background-color: transparent;
     position: relative;
     width: 70%;
     height: 50%;
@@ -73,7 +72,7 @@
         z-index: 1;
       }
       &:hover{
-        background-color: $mainColor;
+        background-color: $backgroundColor1;
         img {
           opacity: 0.5;
           z-index: 1;

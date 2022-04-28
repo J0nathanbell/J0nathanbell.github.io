@@ -2,7 +2,7 @@ import './intro.scss'
 import { init } from 'ityped'
 import { useEffect, useRef } from "react"
 
-export default function Intro() {
+export default function Intro({menuOpen}) {
   const textRef = useRef();
 
   useEffect(()=>{
@@ -14,10 +14,10 @@ export default function Intro() {
   },[]);
 
   return (
-    <div className='intro' id="intro">
+    <div className="intro" id="intro">
       <div className='left'>
-        <div className="imgContainer">
-          <img src={require('../../assets/coolguy3.png')} alt="" />
+        <div className={"imgContainer " + (menuOpen && 'active')}>
+          <img className = 'top' src={require('../../assets/coolguy3.png')} alt="" />
         </div>
       </div>
       <div className='right'>
@@ -26,7 +26,10 @@ export default function Intro() {
           <h1>Jonathan Bell</h1>
           <h3>Frontend <span ref={textRef}></span></h3>
           <a href="#portfolio">
-            <img src={require('../../assets/down.png')}  alt="" />
+            <div className="arrowContainer">
+              <span className={"arrow1 "+ (menuOpen && 'active')}></span>
+              <span className={"arrow2 "+ (menuOpen && 'active')}></span>
+            </div>
           </a>
         </div>
       </div>

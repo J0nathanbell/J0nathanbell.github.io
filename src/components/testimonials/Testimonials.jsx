@@ -1,7 +1,6 @@
-import './testimonials.scss'
-const data = [
-
-  {
+import './testimonials.scss';
+import React, { useState } from "react";
+const data = [{
     id: 1,
     icon: require("../../assets/twitter.png"),
     name: "dasdasd",
@@ -31,27 +30,11 @@ const data = [
 ];
 
 export default function Testimonials() {
+
+  const onChange = 0
   return (
     <div className='testimonials' id="testimonials">
-      <h1>Testimonials</h1>
-      <div className="container">
-        {data.map(d=>(
-          <div className={d.featured ? 'card featured' : 'card'}>
-            <div className="top">
-              <img className="left" src={require("../../assets/right-arrow.png")}  alt="" />
-              <img className="user" src={d.img}  alt="" />
-              <img className="right" src={d.icon}  alt="" />
-            </div>
-            <div className="center">
-              {d.desc}
-            </div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
-            </div>
-          </div>
-          ))}
-      </div>
+      <input placeholder="enter something..." onChange={onChange}/>
     </div>
-  )
-}
+  );
+};

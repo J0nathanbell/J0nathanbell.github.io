@@ -1,5 +1,12 @@
-$mainColor: #000000;
+$textColor1: #ABB2BF;
+$textColor2: #97C379;
+$textColor3: #E16B74;
+$textColor4: #E5C07A;
+$textColor5: #61AEEF;
+$textColor6: #C778DD;
 
+$backgroundColor1: rgb(40,44,52);
+$backgroundColor2: #1D1F23;
 
 $width: 849px;
 
@@ -7,4 +14,9 @@ $width: 849px;
     @media(max-width: #{$width}){
       @content
     }
+}
+
+@mixin theme {
+  background: $backgroundColor1;
+  color: $textColor1;
 }
