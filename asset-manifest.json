@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.483d54c4.css",
-    "main.js": "/static/js/main.5d402afb.js",
+    "main.css": "/static/css/main.7659f2d4.css",
+    "main.js": "/static/js/main.9da971f9.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
     "static/media/team.png": "/static/media/team.db177f77942f828b71e3.png",
     "static/media/app.gif": "/static/media/app.c8bb1af36c99ec6c97f4.gif",
@@ -15,12 +15,14 @@
     "static/media/rails.png": "/static/media/rails.c87f032e560c7a8da82c.png",
     "static/media/Heroku.png": "/static/media/Heroku.567d3fe051c8efaa05b0.png",
     "static/media/github.png": "/static/media/github.2b0a8c046c4080c2482e.png",
+    "static/media/twitter.png": "/static/media/twitter.94db4a073d271647bc82.png",
+    "static/media/down.png": "/static/media/down.968dfc21ca8009eaa417.png",
     "index.html": "/index.html",
-    "main.483d54c4.css.map": "/static/css/main.483d54c4.css.map",
-    "main.5d402afb.js.map": "/static/js/main.5d402afb.js.map"
+    "main.7659f2d4.css.map": "/static/css/main.7659f2d4.css.map",
+    "main.9da971f9.js.map": "/static/js/main.9da971f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.483d54c4.css",
-    "static/js/main.5d402afb.js"
+    "static/css/main.7659f2d4.css",
+    "static/js/main.9da971f9.js"
   ]
 }
