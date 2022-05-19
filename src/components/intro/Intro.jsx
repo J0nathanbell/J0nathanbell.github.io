@@ -17,7 +17,7 @@ export default function Intro({menuOpen}) {
     <div className="intro" id="intro">
       <div className='left'>
         <div className={"imgContainer " + (menuOpen && 'active')}>
-          <img className = 'top' src={require('../../assets/coolguy3.png')} alt="" />
+          <img className={"top " + (menuOpen && "active")} src={require('../../assets/coolguy3.png')} alt="" />
         </div>
       </div>
       <div className='right'>
