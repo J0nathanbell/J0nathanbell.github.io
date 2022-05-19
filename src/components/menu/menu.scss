@@ -2,61 +2,52 @@
 
 
 .menu{
-  width: 200px;
+  width: 500px;
   height: 100vh;
   background-color: $backgroundColor1;
   position: fixed;
   top: 0;
-  right: -200px;
+  right: -500px;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
-
-
   &.active{
     right: 0;
   }
-
   ul{
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size:  25px;
+    font-size:  50px;
     font-weight: 400;
-    color: $textColor3;
     width: 80%;
     overflow: visible;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding:0.3rem 0.3rem;
+    margin:0 0.3rem;
     li{
+      padding: 4%;
       margin-bottom: 25px;
       overflow: visible;
-      padding: 6%;
-
+      transition:all .2s ease;
+      font-size: inherit;
+      box-shadow: 15px 10px 36px -25px $textColor3;
+      border: dotted 2px $textColor3;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      &:hover{
+        color: $textColor2;
+        border: dotted 2px $textColor2;
+        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+        transform: scale(1.1);
+      }
       a{
-        font-size: inherit;
-        color: inherit;
+        color: $textColor3;
         text-decoration: none;
-        transition:all .5s ease;
-        box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-        border:dotted 2px $textColor1;
-        background:transparent;
-        padding:0.3rem 0.3rem;
-        margin:0 0.3rem;
-        // &.active{
-        //   // background-color: $backgroundColor1;
-        // }
-
-        &:hover{
-          color: $textColor1;
-          box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-          border:dotted 2px $textColor3;
-        }
       }
     }
   }

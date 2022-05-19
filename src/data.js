@@ -21,6 +21,9 @@ export const featuredPortfolio = [
     img: require('./assets/website_content/projects/apps/whatever/team.png'),
     appLink: "https://www.youtube.com/watch?v=jR9xcC7LZD4"
   },
+  {
+    paragraph: 'A movie and food pairing app built with ruby on rails'
+  }
 ];
 
 export const webappPortfolio = [
@@ -45,6 +48,10 @@ export const webappPortfolio = [
     title: "Team",
     img: require('./assets/website_content/projects/apps/whatever/team.png')
   },
+  {
+    paragraph: "A airBnB clone, selling horror movie villan, 'rent-a-scairs'"
+  }
+
 ];
 
 export const mobilePortfolio = [
@@ -62,6 +69,9 @@ export const mobilePortfolio = [
     link2: 'https://j0nathanbell.github.io/pokemon/',
     icon3: require('./assets/website_content/icons/js.png'),
   },
+  {
+    paragraph: 'A pokedex made with vanilla JS',
+  }
 ];
 
 export const designingPortfolio = [
@@ -77,4 +87,7 @@ export const designingPortfolio = [
     link: "https://github.com/J0nathanbell/large_screen_rejection_close",
     icon3: require('./assets/website_content/icons/py.png'),
   },
+  {
+    paragraph: 'My first app, a mouse automation app for filling data into forms',
+  }
 ];

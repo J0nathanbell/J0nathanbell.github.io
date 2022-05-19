@@ -50,6 +50,16 @@ export default function Portfolio() {
     }
   }, [selected]);
 
+
+//   const missingImage = document.querySelector('.mainImage')
+//   document.addEventListener("DOMContentLoaded", function(event) {
+//     document.querySelectorAll('img').forEach(function(img){
+//      img.onerror = function(){this.style.display='none';};
+//     })
+//  });
+
+
+
   return (
     <div className='portfolio' id="portfolio">
       <h1>Projects</h1>
@@ -67,7 +77,7 @@ export default function Portfolio() {
         {data.map((d)=>(
           <div className="item">
             <a className="applink" href={d.appLink}>
-              <img className='mainImage' src={d.img} alt="" />
+              <img className='mainImage' onerror="this.style.display='none';" src={d.img} alt="" />
             </a>
             <h3 className="title">{d.title}</h3>
             <h5>Links</h5>
@@ -85,8 +95,11 @@ export default function Portfolio() {
               {d.icon && <img className="icon" src={d.icon} alt=""/>}
               {d.icon2 && <img className="icon2" src={d.icon2} alt=""/>}
               {d.icon3 && <img className="icon3" src={d.icon3} alt=""/>}
-              {d.icon && <img className="icon4" src={d.icon4} alt=""/>}
+              {/* {d.icon && <img className="icon4" src={d.icon4} alt=""/>} */}
             </div>
+          <div className="paragraph">
+            <p>{d.paragraph}</p>
+          </div>
           </div>
         ))}
       </div>

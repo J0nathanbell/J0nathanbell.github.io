@@ -34,7 +34,7 @@
       float: right;
       transition: all 0.3s ease;
       &:hover{
-        background-color: $textColor6;
+        background-color: rgba($color: #c778dd, $alpha: 0.2)
       }
 
       @include mobile {
