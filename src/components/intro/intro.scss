@@ -125,16 +125,16 @@
           bottom: 20px;
         }
         .arrowContainer{
-          width: 200px;
+          width: 150px;
           height: 200px;
           display: flex;
-          flex-direction:row;
+          flex-direction:column-reverse;
           align-items: center;
-          justify-content: space-around;
+          justify-content: center;
           cursor: pointer;
 
           .arrow1 {
-            width: 100%;
+            width: 200px;
             height: 3px;
             background-color: $textColor1;
             transform-origin: left;
@@ -145,7 +145,7 @@
             }
           }
           .arrow2 {
-            width: 150%;
+            width: 200px;
             transform: rotate(-45deg);
             height: 3px;
             background-color: $textColor1;

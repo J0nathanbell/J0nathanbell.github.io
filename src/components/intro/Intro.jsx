@@ -9,7 +9,7 @@ export default function Intro({menuOpen}) {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1000,
-      strings: ['Programmer', 'Web Developer', 'Code-wizard']
+      strings: ['Programmer', 'Web Developer', 'Coding dude']
     })
   },[]);
 
