@@ -9,7 +9,7 @@ export default function Works() {
       icon: require('../../assets/arrow.png'),
       title: 'Experiance',
       description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/arrow.png'),
+      img: require('../../assets/me2.png'),
     },
     {
       id: "2",
@@ -27,7 +27,7 @@ export default function Works() {
 
 ];
 const handleClick =  (direction) => {
-  // if the direction 
+  // if the direction
   direction === "left"
    ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
    : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0 );

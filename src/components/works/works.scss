@@ -1,7 +1,8 @@
 @import "../../global.scss";
 
 .works{
-  background-color: white;
+  background-color: $backgroundColor1;
+  color: $textColor1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +71,7 @@
           align-items: center;
           justify-content: center;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.865);
+          background-color: $backgroundColor2;
 
           .leftcontainer{
             width: 90%;
@@ -92,12 +93,16 @@
             }
             h2{
               font-size: 20px;
+              color: $textColor1;
+
               @include mobile{
                 font-size: 15px;
               }
             }
             p{
               font-size: 13px;
+              color: $textColor1;
+
               @include mobile{
                 font-size: 10px;
               }
@@ -119,15 +124,15 @@
           flex: 8;
           height: 100%;
           display: flex;
-          align-items: center;
-          background-color: rgba(0, 0, 0, 0.865);
+          background-color: $textColor2;
           overflow: hidden;
-          justify-content: center;
+          justify-content: flex-start;
+          flex-direction: column;
+          // flex-wrap: wrap;
 
           img{
-            width: 80%;
-            height: 80%;
-            transform: rotate(-10deg);
+            // border-radius: 15px;
+            height: 150px;
           }
         }
 
