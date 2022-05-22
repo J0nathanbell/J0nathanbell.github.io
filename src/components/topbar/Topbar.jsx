@@ -1,6 +1,5 @@
 import "./topbar.scss"
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -10,22 +9,13 @@ export default function topbar({menuOpen, setMenuOpen}) {
       <div className="wrapper">
         <div className="left">
           <div className="nameContainer">
-            <a href="#intro" className="logo"><span>.Jonathan.</span></a>
+            <span className="logo"><a href="#intro" >.Jonathan.</a></span>
           </div>
-          <div className="itemContainer">
-            <a href="tel:+447722442278"><span><PhoneIphoneIcon className='icon'/></span></a>
-          </div>
-          <div className="itemContainer">
-            <a href="mailto:jonnybell123@hotmail.com?subject=Enquiry"><span><EmailIcon className='icon'/></span></a>
-          </div>
-          <div className="itemContainer">
-            <a href="https://github.com/J0nathanbell"><span><GitHubIcon className='icon'/></span></a>
-          </div>
-          <div className="itemContainer">
-            <a href="https://www.facebook.com/profile.php?id=100073074377173"><span><FacebookIcon className='icon'/></span></a>
-          </div>
-          <div className="itemContainer">
-            <a href="https://www.linkedin.com/in/jonathanbell123/"><span><LinkedInIcon className='icon'/></span></a>
+          <div className="iconContainer">
+            <span className="icon"><a href="mailto:jonnybell123@hotmail.com?subject=Enquiry"><EmailIcon/></a></span>
+            <span className="icon"><a href="https://github.com/J0nathanbell"><GitHubIcon/></a></span>
+            <span className="icon"><a href="https://www.facebook.com/profile.php?id=100073074377173"><FacebookIcon/></a></span>
+            <span className="icon"><a href="https://www.linkedin.com/in/jonathanbell123/"><LinkedInIcon/></a></span>
           </div>
         </div>
         <div className="right">

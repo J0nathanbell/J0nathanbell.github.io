@@ -32,9 +32,10 @@
       align-items: center;
       justify-content: center;
       float: right;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
       &:hover{
-        background-color: rgba($color: #c778dd, $alpha: 0.2)
+        background-color: rgba($color: #c778dd, $alpha: 0.2);
+        transition: all 0.4s ease;
       }
 
       @include mobile {
@@ -43,7 +44,7 @@
 
       img{
         width: 65%;
-        transition: all 0.6s ease;
+        transition: all 0.4s ease;
         &.active {
           // filter: blur(3px);
           filter: invert(100%);
@@ -141,7 +142,7 @@
           cursor: pointer;
 
           .arrow1 {
-            transition: all .3s ease;
+            transition: all .4s ease;
             width: 200px;
             height: 3px;
             background-color: $textColor1;
@@ -153,7 +154,7 @@
             }
           }
           .arrow2 {
-            transition: all .3s ease;
+            transition: all .4s ease;
             width: 200px;
             transform: rotate(-45deg);
             height: 3px;

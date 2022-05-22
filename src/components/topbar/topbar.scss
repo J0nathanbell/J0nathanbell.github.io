@@ -9,42 +9,41 @@
   z-index: 3;
 
   span {
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-in-out;
   }
   .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     .left {
       display: flex;
       align-items: center;
-
-      a {
+      .logo {
         padding: 0;
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
         color: $textColor1;
-        transition: all .3s ease-in-out;
+        transition: all 0.4s ease-in-out;
       }
-
-      .itemContainer {
+      .iconContainer {
         display: flex;
         align-items: center;
-        margin-left: 30px;
-        .icon {
+        justify-content: space-evenly;
+        margin-left: 15px;
+        width: 200px;
+        flex-direction: row;
+          svg{
+          color: $textColor1;
           font-size: 18px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.4s ease-in-out;
           &:hover {
-            transition: all .3s ease-in-out;
+            transition: all 0.4s ease-in-out;
             font-size: 30px;
           }
-        }
-
-        span {
-          font-size: 15px;
-          font-weight: 500;
         }
         @include mobile {
           display: none;
@@ -72,7 +71,10 @@
 }
 .topbar.active {
 
-  span{
+  .icon{
+    color: $textColor3;
+  }
+  .logo{
     color: $textColor3;
   }
   .hamburger {
