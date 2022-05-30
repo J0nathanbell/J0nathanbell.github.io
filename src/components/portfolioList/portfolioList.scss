@@ -7,18 +7,18 @@ ul{
       font-size: 25px;
       margin-right: 50px;
       padding: 7px;
-      // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
       cursor: pointer;
-      // border: dotted 2px $textColor2;
-      // box-shadow: 1px 1px 1px 2px $textColor1;
       background:transparent;
       padding:0.3rem 0.3rem;
-      margin:0 0.3rem;
+      margin:0 0.5rem;
       color: $textColor2;
+      box-shadow: 15px 10px 36px -25px $textColor3;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
       &:hover{
-        // box-shadow: 0px 0px 0px 0px white;
-        // border:dotted 2px $textColor1;
         transform: scale(1.2);
+        border-radius: 15px;
+        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
       }
     @include mobile {
       margin-right: 10px;

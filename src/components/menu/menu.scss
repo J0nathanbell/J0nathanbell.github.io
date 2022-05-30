@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
-
 .menu{
-  width: 500px;
+  width: 215px;
   height: 100vh;
   background-color: $backgroundColor1;
   position: fixed;
@@ -22,7 +21,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size:  50px;
+    font-size:  30px;
     font-weight: 400;
     width: 80%;
     overflow: visible;
@@ -38,12 +37,11 @@
       transition:all .4s ease;
       font-size: inherit;
       box-shadow: 15px 10px 36px -25px $textColor3;
-      border: dotted 2px $textColor3;
       border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
       color: $textColor2;
       &:hover{
+        border-radius: 15px;
         transition:all .4s ease;
-        border: dotted 2px $textColor2;
         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
         transform: scale(1.1);
         a{
