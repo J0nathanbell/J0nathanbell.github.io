@@ -101,6 +101,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      border: 3px solid $textColor5;
+
 
       .container2{
         width: 90%;
@@ -164,6 +166,8 @@
     .item:nth-child(3){
       width: 30%;
       height: 60%;
+      border: 3px solid $textColor6;
+
       .icon-container{
         display: none;
       }

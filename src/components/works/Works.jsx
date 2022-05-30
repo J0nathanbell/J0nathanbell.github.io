@@ -6,23 +6,23 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: require('../../assets/arrow.png'),
+      icon: require('../../assets/icons/arrow.png'),
       title: 'Experiance',
       description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/me2.png'),
+      img: require('../../assets/myPicture/chatting.png'),
     },
     {
       id: "2",
-      icon: require('../../assets/arrow.png'),
+      icon: require('../../assets/icons/arrow.png'),
       title: 'Personal Projects/ Hobbies',
       description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/arrow.png'),
+      img: require('../../assets/icons/arrow.png'),
     },    {
       id: "3",
-      icon: require('../../assets/arrow.png'),
+      icon: require('../../assets/icons/arrow.png'),
       title: 'Personal Projects/ Hobbies',
       description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/arrow.png'),
+      img: require('../../assets/icons/arrow.png'),
     },
 
 ];
@@ -61,13 +61,13 @@ const handleClick =  (direction) => {
           ))}
       </div>
       <img
-        src={require("../../assets/down.png")}
+        src={require("../../assets/icons/down.png")}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src={require("../../assets/down.png")}
+        src={require("../../assets/icons/down.png")}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

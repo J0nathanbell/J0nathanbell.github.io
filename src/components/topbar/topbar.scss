@@ -7,7 +7,6 @@
   position: fixed;
   top: 0;
   z-index: 3;
-
   span {
     transition: all 0.4s ease-in-out;
   }
@@ -23,9 +22,11 @@
         padding: 0;
         font-size: 40px;
         font-weight: 700;
-        text-decoration: none;
-        color: $textColor1;
         transition: all 0.4s ease-in-out;
+        a{
+          text-decoration: none;
+          color: $textColor1;
+        }
       }
       .iconContainer {
         display: flex;
@@ -36,13 +37,12 @@
         flex-direction: row;
           svg{
           color: $textColor1;
-          font-size: 18px;
-          font-weight: 500;
           text-decoration: none;
-          transition: all 0.4s ease-in-out;
+          font-size: large;
+          transition: all 0.4s ease;
           &:hover {
-            transition: all 0.4s ease-in-out;
-            font-size: 30px;
+            transition: all 0.4s ease;
+            font-size: xx-large;
           }
         }
         @include mobile {
