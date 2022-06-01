@@ -26,8 +26,7 @@ export default function Works() {
     },
 
 ];
-const handleClick =  (direction) => {
-  // if the direction
+const handleClick = (direction) => {
   direction === "left"
    ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
    : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0 );

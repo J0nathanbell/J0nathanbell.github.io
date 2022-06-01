@@ -58,7 +58,9 @@ export const mobilePortfolio = [
     link2: 'https://j0nathanbell.github.io/pokemon/',
     icon3: require('./assets/icons/js.png'),
   },
-  {},
+  {
+    img: require('./assets/myPicture/skatingchilled.jpg')
+  },
   {
     paragraph: 'A pokedex made with vanilla JS',
   }
@@ -74,7 +76,9 @@ export const designingPortfolio = [
     link: "https://github.com/J0nathanbell/large_screen_rejection_close",
     icon3: require('./assets/icons/py.png'),
   },
-  {},
+  {
+    img: require('./assets/myPicture/skatingchilled.jpg')
+  },
   {
     paragraph: 'My first app, a mouse automation app for filling data into forms',
   }
