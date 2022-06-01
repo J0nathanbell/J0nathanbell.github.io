@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
   h1{
     font-size: 50px;
     color: $textColor1;
@@ -34,27 +33,21 @@
     height: 50%;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: flex-end;
     @include mobile {
       width: 100%;
     }
     .item{
       width: 40%;
-      height: 40%;
-      border-radius: 30px;
-      border: 3px solid $textColor4;
+      height: 60%;
+      border-radius: 35px;
+      border: 2px solid $textColor4;
       margin: 10px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       transition: all 0.4s ease;
-      box-shadow: 4px 4px 6px $textColor1;
-      @include mobile {
-        width: 130px;
-        height: 130px;
-        margin: 10px 10px;
-      }
       h5{
         display:none;
       }
@@ -62,7 +55,6 @@
         color: white;
         font-size: 30px;
       }
-
       img{
         width: 100%;
         height: 100%;
@@ -70,18 +62,21 @@
         z-index: 1;
         transition: all 0.4s ease;
       }
+      .paragraph{
+        overflow: hidden;
+      }
       &:hover{
-        transition: all 0.4s ease;
         background-color: $backgroundColor1;
         img {
-          transition: all 0.4s ease;
           opacity: 0.5;
           z-index: 1;
         }
       }
-    }
-    .paragraph{
-      overflow: hidden;
+      @include mobile {
+        width: 130px;
+        height: 130px;
+        margin: 10px 10px;
+      }
     }
     .item:first-child{
       width: 30%;
@@ -102,8 +97,31 @@
       justify-content: center;
       flex-direction: column;
       border: 3px solid $textColor5;
-
-
+      background-color: $backgroundColor1;
+      cursor: auto;
+      .applink{
+        display: none;
+      }
+      h3.title{
+        display: none;
+      }
+      .icon-container{
+        margin: 0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h5{
+        display:contents;
+        width: 70px;
+      }
+      img:nth-child(4){
+        display: none;
+      }
+      img{
+        opacity: 1;
+        z-index: 1;
+      }
       .container2{
         width: 90%;
         display: flex;
@@ -128,7 +146,6 @@
             height: 65px;
             width: 42px;
             margin: 0px 15px;
-
           }
         }
         .ghpages{
@@ -136,41 +153,11 @@
           width: 60px;
         }
       }
-
-      .applink{
-        display: none;
-      }
-      h3.title{
-        display: none;
-      }
-      .icon-container{
-        margin: 0px 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      h5{
-        display:contents;
-        width: 70px;
-      }
-      img:nth-child(4){
-        display: none;
-      }
-      background-color: $backgroundColor1;
-      cursor: auto;
-      img{
-        opacity: 1;
-        z-index: 1;
-      }
     }
     .item:nth-child(3){
       width: 30%;
       height: 60%;
       border: 3px solid $textColor6;
-
-      .icon-container{
-        display: none;
-      }
       .applink{
         height: 100%;
         width: 100%;
@@ -186,6 +173,13 @@
       h5{
         display: none;
       }
+    }
+    .item:nth-child(4) {
+      position: absolute;
+      top:935px;
+      height: 30px;
+      color: $textColor1;
+      border: 3px solid $textColor1;
     }
   }
 }
