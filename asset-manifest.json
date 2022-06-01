@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a26eaf15.css",
-    "main.js": "/static/js/main.4f4dfb2c.js",
+    "main.css": "/static/css/main.4cd69de9.css",
+    "main.js": "/static/js/main.d58526dc.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
     "static/media/team.png": "/static/media/team.db177f77942f828b71e3.png",
     "static/media/app.gif": "/static/media/app.c8bb1af36c99ec6c97f4.gif",
@@ -11,6 +11,7 @@
     "static/media/scareBnBDemoVideo.webp": "/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
     "static/media/js.png": "/static/media/js.923275cdf7e3c2565687.png",
     "static/media/ruby.png": "/static/media/ruby.c7bc8aaa300e723f7ef8.png",
+    "static/media/skatingchilled.jpg": "/static/media/skatingchilled.e82920865202ba92c37b.jpg",
     "static/media/ghpages.png": "/static/media/ghpages.e7418b93e4a6c18c6341.png",
     "static/media/py.png": "/static/media/py.f1a07429fcf04073a41e.png",
     "static/media/rails.png": "/static/media/rails.c87f032e560c7a8da82c.png",
@@ -18,11 +19,11 @@
     "static/media/github.png": "/static/media/github.2b0a8c046c4080c2482e.png",
     "static/media/down.png": "/static/media/down.968dfc21ca8009eaa417.png",
     "index.html": "/index.html",
-    "main.a26eaf15.css.map": "/static/css/main.a26eaf15.css.map",
-    "main.4f4dfb2c.js.map": "/static/js/main.4f4dfb2c.js.map"
+    "main.4cd69de9.css.map": "/static/css/main.4cd69de9.css.map",
+    "main.d58526dc.js.map": "/static/js/main.d58526dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.a26eaf15.css",
-    "static/js/main.4f4dfb2c.js"
+    "static/css/main.4cd69de9.css",
+    "static/js/main.d58526dc.js"
   ]
 }
