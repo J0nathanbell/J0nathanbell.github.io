@@ -73,16 +73,12 @@
             flex-direction: column;
             justify-content: space-between;
             .imgcontainer{
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background-color: coral;
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
             }
             img{
-              width: 25px;
+              border-radius: 15px;
             }
             h2{
               font-size: 20px;
@@ -104,7 +100,7 @@
             span{
               font-size: 12px;
               font-weight: 600;
-              text-decoration: underline;
+              // text-decoration: underline;
               cursor: pointer;
               @include mobile{
                 font-size: 10px;
@@ -123,9 +119,13 @@
           flex-direction: column;
           // flex-wrap: wrap;
 
-          img{
+          .img1{
             // border-radius: 15px;
-            height: 150px;
+            height: 400px;
+          }
+          .img2{
+            object-fit: cover;
+            object-position: center -240px;
           }
         }
 

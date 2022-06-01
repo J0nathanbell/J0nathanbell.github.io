@@ -1,15 +1,18 @@
 import { useState } from "react";
 import './works.scss'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 export default function Works() {
   const [currentSlide,setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: require('../../assets/icons/arrow.png'),
+      icon: require('../../assets/experiance/lewagon.png'),
       title: 'Experiance',
       description: "Le wagon coding bootcamp 2021 September",
+      award: <EmojiEventsIcon/>,
       img: require('../../assets/myPicture/chatting.png'),
+      img2: require('../../assets/experiance/lewagoncrew.jpg')
     },
     {
       id: "2",
@@ -48,12 +51,15 @@ const handleClick = (direction) => {
                 <h2>{d.title}</h2>
                 <p>
                   {d.description}
+                  {d.award && <a href="../../assets/experiance/diploma.pdf">{d.award}</a>}
                 </p>
-                <span>Click me</span>
+                <span>A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the the ruby on rails development process</span>
               </div>
             </div>
             <div className="right">
-              <img src={d.img} alt="" />
+              <img className="img1" src={d.img} alt="" />
+              <img className="img2" src={d.img2} alt="" />
+              <p></p>
             </div>
           </div>
         </div>
