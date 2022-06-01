@@ -80,6 +80,6 @@ export const designingPortfolio = [
     img: require('./assets/myPicture/skatingchilled.jpg')
   },
   {
-    paragraph: 'My first app, a mouse automation app for filling data into forms',
+    paragraph: 'My first app, a mouse automation app for auto-filling form data',
   }
 ];

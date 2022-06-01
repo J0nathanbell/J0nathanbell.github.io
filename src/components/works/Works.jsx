@@ -8,7 +8,7 @@ export default function Works() {
       id: "1",
       icon: require('../../assets/icons/arrow.png'),
       title: 'Experiance',
-      description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
+      description: "Le wagon coding bootcamp 2021 September",
       img: require('../../assets/myPicture/chatting.png'),
     },
     {

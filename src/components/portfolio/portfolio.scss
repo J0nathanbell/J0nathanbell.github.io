@@ -177,7 +177,10 @@
     .item:nth-child(4) {
       position: absolute;
       top:890px;
-      height: 30px;
+      height: 40px;
+      width: auto;
+      padding-left: 10px;
+      padding-right: 10px;
       color: $textColor1;
       border: 3px solid $textColor1;
     }
