@@ -90,6 +90,7 @@
       }
     }
     .item:nth-child(2){
+
       width: 20%;
       height: 60%;
       display: flex;
@@ -155,6 +156,7 @@
       }
     }
     .item:nth-child(3){
+      flex-direction: column;
       width: 30%;
       height: 60%;
       border: 3px solid $textColor6;

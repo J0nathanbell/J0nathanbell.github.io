@@ -66,6 +66,7 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d)=>(
           <div className="item">
+            <h3 className="header">{d.header}</h3>
             <a className="applink" href={d.appLink}>
               {d.img && <img className='mainImage' src={d.img} alt="" />}
             </a>
@@ -86,9 +87,9 @@ export default function Portfolio() {
               {d.icon2 && <img className="icon2" src={d.icon2} alt=""/>}
               {d.icon3 && <img className="icon3" src={d.icon3} alt=""/>}
             </div>
-          <div className="paragraph">
-            <p>{d.paragraph}</p>
-          </div>
+            <div className="paragraph">
+              <p>{d.paragraph}</p>
+            </div>
           </div>
         ))}
       </div>

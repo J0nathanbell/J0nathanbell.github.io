@@ -14,7 +14,8 @@ export const featuredPortfolio = [
     icon3: require('./assets/icons/js.png'),
   },
   {
-    title: "Team",
+    header: 'Built by',
+    title: "Le-wagon Team",
     img: require('./assets/projects/apps/whatever/team.png'),
     appLink: "https://www.youtube.com/watch?v=jR9xcC7LZD4"
   },
@@ -38,7 +39,8 @@ export const webappPortfolio = [
     icon3: require('./assets/icons/js.png'),
   },
   {
-    title: "Team",
+    header: 'Built by',
+    title: "Le-wagon Team",
     img: require('./assets/projects/apps/whatever/team.png')
   },
   {
@@ -59,6 +61,8 @@ export const mobilePortfolio = [
     icon3: require('./assets/icons/js.png'),
   },
   {
+    header: 'Built by',
+    title: "Me",
     img: require('./assets/myPicture/skatingchilled.jpg')
   },
   {
@@ -77,6 +81,8 @@ export const designingPortfolio = [
     icon3: require('./assets/icons/py.png'),
   },
   {
+    header: 'Built by',
+    title: "Me",
     img: require('./assets/myPicture/skatingchilled.jpg')
   },
   {
