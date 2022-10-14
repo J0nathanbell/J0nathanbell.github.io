@@ -3,7 +3,7 @@
 .topbar {
   background-color: $backgroundColor1;
   width: 100%;
-  height: 70px;
+  height: 12%;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -11,7 +11,7 @@
     transition: all 0.4s ease-in-out;
   }
   .wrapper {
-    padding: 10px 30px;
+    padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@
       .nameContainer{
         .logo {
           padding: 0;
-          font-size: 40px;
+          font-size: 30px;
           font-weight: 700;
           a {
             transition: all 0.4s ease-in-out;
@@ -88,8 +88,8 @@
     }
     .right {
       .hamburger {
-        width: 32px;
-        height: 25px;
+        width: 28px;
+        height: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
