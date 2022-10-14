@@ -16,15 +16,15 @@
     display: flex;
     overflow: hidden;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     @include mobile {
       flex: 0.5;
     }
 
     .imgContainer{
-      width: 550px;
-      height: 550px;
+      width: 45%;
+      height: 60%;
       background-color: $backgroundColor1;
       border-radius: 50%;
       border: 2px solid $textColor1;
@@ -43,7 +43,7 @@
       }
 
       img{
-        width: 65%;
+        width: 70%;
         transition: all 0.8s ease;
         &.active {
           // filter: blur(3px);
