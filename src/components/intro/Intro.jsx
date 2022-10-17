@@ -9,7 +9,7 @@ export default function Intro({menuOpen}) {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1000,
-      strings: ['Programmer', 'Web Developer', 'Coding dude']
+      strings: ['A dab-hand with HTML', 'A progigy with Python', '"The" NodeJS Ninja', 'The CSS Swashbuckler', 'The wrangler of Ruby', 'The terminal terminator', 'The Giga Chad of git', 'Supreame Ruler of React', 'The Reaper of Rails', 'Like Jesus with Javascript']
     })
   },[]);
 
@@ -24,7 +24,8 @@ export default function Intro({menuOpen}) {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Jonathan Bell</h1>
-          <h3>Frontend <span ref={textRef}></span></h3>
+          <h3>Some folks describe me as...</h3>
+          <h3><span ref={textRef}></span></h3>
           <a href="#portfolio">
             <div className="arrowContainer">
               <span className={"arrow1 "+ (menuOpen && 'active')}></span>

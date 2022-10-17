@@ -23,36 +23,39 @@
     }
 
     .imgContainer{
-      width: 45%;
-      height: 60%;
+      width: 20rem;
+      height: 20rem;
       background-color: $backgroundColor1;
-      border-radius: 50%;
+      border-radius: 30%;
       border: 2px solid $textColor1;
       display: flex;
       align-items: center;
       justify-content: center;
       float: right;
       transition: all 0.4s ease;
+      overflow: hidden;
       &:hover{
         background-color: rgba($color: #c778dd, $alpha: 0.2);
         transition: all 0.4s ease;
-      }
+        border-radius: 50%;
 
+      }
       @include mobile {
         align-items: flex-start;
+        width: 18rem;
+        height: 18rem;
+        overflow: hidden;
       }
-
       img{
-        width: 70%;
+        width: 14rem;
+
         transition: all 0.8s ease;
         &.active {
-          // filter: blur(3px);
           filter: invert(100%);
         }
         @include mobile {
-          height: 80%;
-          width: 80%;
-        }
+          width: 12.8rem;
+          }
       }
       &.active {
         border: 2px solid $textColor3;
@@ -62,11 +65,13 @@
   .right{
     flex:0.5;
     position: relative;
+    // border: 5px solid green;
 
     @include mobile {
       background-color: transparent;
     }
     .wrapper{
+      // border: 5px solid yellow;
       width: 100%;
       height: 100%;
       display: flex;
@@ -121,30 +126,31 @@
       }
 
       a{
-        position: absolute;
-        bottom: 50px;
-        // bottom was also changed from 10 px
-        left: 30%;
+        // position: absolute;
+        // border: 5px solid blue;
 
         @include mobile {
-          left: 0;
           display: flex;
           justify-content: center;
           bottom: 20px;
         }
         .arrowContainer{
-          width: 150px;
-          height: 200px;
+          position: relative;
+          // border: 5px solid #c778dd;
+          width: 10rem;
+          height: 10rem;
           display: flex;
-          flex-direction:column-reverse;
-          align-items: center;
+          align-items:center;
           justify-content: center;
           cursor: pointer;
 
           .arrow1 {
+            position: absolute;
+            margin-right: 2.5rem;
+            // left: 8.25rem;
             transition: all .4s ease;
-            width: 200px;
-            height: 3px;
+            width: 5rem;
+            height: 0.25rem;
             background-color: $textColor1;
             transform-origin: left;
             transform: rotate(45deg);
@@ -154,10 +160,14 @@
             }
           }
           .arrow2 {
+            position: absolute;
+            // right: 8.25rem;
+            margin-left: 2.5rem;
+
             transition: all .4s ease;
-            width: 200px;
+            width: 5rem;
+            height: 0.25rem;
             transform: rotate(-45deg);
-            height: 3px;
             background-color: $textColor1;
             transform-origin: right;
             animation: arrowBlink 2s infinite;
