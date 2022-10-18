@@ -52,17 +52,19 @@ export default function Portfolio() {
 
   return (
     <div className='portfolio' id="portfolio">
-      <h1>Projects</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
+      <div className="topContainer">
+        <h1>Projects</h1>
+        <ul>
+          {list.map((item) => (
+            <PortfolioList
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+            />
+          ))}
+        </ul>
+      </div>
       <div className="container">
         {data.map((d)=>(
           <div className="item">
@@ -71,7 +73,7 @@ export default function Portfolio() {
               {d.img && <img className='mainImage' src={d.img} alt="" />}
             </a>
             <h3 className="title">{d.title}</h3>
-            <h5>Links</h5>
+            {/* <h5>Links</h5> */}
             <div className="container2">
               <a className="link" href={d.link}>
                 <img className="hubby" src={d.github} alt=""/>

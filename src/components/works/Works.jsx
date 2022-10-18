@@ -20,14 +20,7 @@ export default function Works() {
       title: 'Personal Projects/ Hobbies',
       description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
       img: require('../../assets/icons/arrow.png'),
-    },    {
-      id: "3",
-      icon: require('../../assets/icons/arrow.png'),
-      title: 'Personal Projects/ Hobbies',
-      description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/icons/arrow.png'),
-    },
-
+    }
 ];
 const handleClick = (direction) => {
   direction === "left"
@@ -53,7 +46,8 @@ const handleClick = (direction) => {
                   {d.description}
                   {d.award && <a href="../../assets/experiance/diploma.pdf">{d.award}</a>}
                 </p>
-                <span>A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the the ruby on rails development process</span>
+                <span>A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the MVC app development architecture utalising the ruby on rails tech stack</span>
+                <span><a href='https://www.youtube.com/watch?v=jR9xcC7LZD4&t=1s'>Watch one of our presentations</a></span>
               </div>
             </div>
             <div className="right">

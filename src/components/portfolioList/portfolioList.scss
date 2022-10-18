@@ -5,28 +5,43 @@ ul{
   .portfolioList{
       transition:all .4s ease;
       font-size: 25px;
-      margin-right: 50px;
-      padding: 7px;
+      margin-right: 1rem;
+      padding: 0.5rem;
       cursor: pointer;
       background:transparent;
       padding:0.3rem 0.3rem;
       margin:0 0.5rem;
-      color: $textColor2;
-      box-shadow: 15px 10px 36px -25px $textColor3;
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      color: $textColor1;
 
       &:hover{
         transform: scale(1.2);
         border-radius: 15px;
-        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+        background-color: $backgroundColor1;
+        box-shadow:8px 8px 4px -6px hsla(0,0%,0%,.3);
       }
     @include mobile {
-      margin-right: 10px;
-      margin-bottom: 20px;
+      font-size: 1rem;
     }
-    &.active{
-      color: $textColor3;
-      // border:dotted 2px $textColor3;
+    &:first-child{
+      &.active{
+        color: $textColor3;
+      }
     }
+    &:nth-child(2){
+      &.active{
+        color: $textColor4;
+      }
+    }
+    &:nth-child(3){
+      &.active{
+        color: $textColor5;
+      }
+    }
+    &:nth-child(4){
+      &.active{
+        color: $textColor6;
+      }
+    }
+
   }
 }
