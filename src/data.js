@@ -63,7 +63,7 @@ export const mobilePortfolio = [
   {
     header: 'Built by',
     title: "Me",
-    img: require('./assets/myPicture/skatingchilled.jpg')
+    img: require('./assets/myPicture/skatingchilled1.jpg')
   },
   {
     paragraph: 'A pokedex made with vanilla JS',
