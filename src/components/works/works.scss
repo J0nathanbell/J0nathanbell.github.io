@@ -4,14 +4,17 @@
   color: $textColor1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+
+
   .arrow{
     height: 70px;
     position: absolute;
     cursor: pointer;
     @include mobile {
-      display: none;
+      position: static;
+
     }
     &.left{
       left: 100px;
@@ -23,25 +26,26 @@
     }
   }
   .slider{
-    height: 350px;
+    height: 18rem;
     display: flex;
     position: absolute;
     left: 0vw;
     transition: all 0.6s ease-out;
-    @include mobile{
-      height: 80vh;
-      flex-direction: column;
-      justify-content: center;
-    }
+    overflow: visible;
+
+    // @include mobile{
+    //   display: flex;
+    //   flex-direction: column;
+    // }
     .container{
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @include mobile{
-        overflow: hidden;
-      }
+      overflow: visible;
+      // @include mobile{
+      //   overflow: hidden;
+      // }
 
       .item{
         width: 700px;
@@ -51,12 +55,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include mobile{
-          width: 90%;
-          height: 80%;
-          margin: 10px 0;
+        box-shadow:8px 8px 4px -6px rgb(0, 0, 0);
 
-        }
+        // @include mobile{
+        //   width: 90%;
+        //   height: 80%;
+        //   margin: 10px 0;
+
+        // }
 
         .left{
           flex: 4;
@@ -68,7 +74,7 @@
 
           .leftcontainer{
             width: 90%;
-            height: 70%;
+            height: 95%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -100,6 +106,7 @@
             span{
               font-size: 12px;
               font-weight: 600;
+            // cursor: pointer;
               @include mobile{
                 font-size: 10px;
               }
@@ -110,23 +117,28 @@
         .right{
           flex: 8;
           height: 100%;
+          width: 10rem;
           display: flex;
           background-color: $textColor2;
           overflow: hidden;
-          justify-content: flex-start;
+          justify-content: center;
           flex-direction: column;
           // flex-wrap: wrap;
-
           .img1{
-            // border-radius: 15px;
-            height: 400px;
+            height: 19.1rem;
+            width: 30rem;
+            object-fit: cover;
+            object-position: center -1.5rem;
           }
           .img2{
             object-fit: cover;
-            object-position: center -240px;
+            height: 25rem;
+            width: 30rem;
+            // object-position: center -15rem;
           }
-        }
 
+
+        }
       }
     }
   }

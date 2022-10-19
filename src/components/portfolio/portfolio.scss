@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
     @include mobile {
       flex-direction: row;
       align-items: center;
@@ -55,7 +56,7 @@
     justify-content: center;
     align-items: center;
     @include mobile {
-      width: 60rem;
+      width: 35rem;
       height: 30rem;
       flex-direction: column;
     }
@@ -127,7 +128,7 @@
       border: 2px solid $textColor1;
       background-color: $backgroundColor1;
       @include mobile{
-        width: 20rem;
+        width: 15rem;
         height: 10rem;
         flex-direction: row;
 

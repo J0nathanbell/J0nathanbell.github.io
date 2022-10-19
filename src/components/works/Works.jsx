@@ -9,22 +9,24 @@ export default function Works() {
       id: "1",
       icon: require('../../assets/experiance/lewagon.png'),
       title: 'Experiance',
-      description: "Le wagon coding bootcamp 2021 September",
+      description: "Le wagon coding bootcamp 2021 September - A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the MVC app development architecture utalising the ruby on rails tech stack",
       award: <EmojiEventsIcon/>,
       img: require('../../assets/myPicture/chatting.png'),
       img2: require('../../assets/experiance/lewagoncrew.jpg')
     },
     {
       id: "2",
-      icon: require('../../assets/icons/arrow.png'),
-      title: 'Personal Projects/ Hobbies',
-      description: "lorem fijhdbfijbsd fidshbfiu dw ufbdsufd fdbsuibfd iufdyb",
-      img: require('../../assets/icons/arrow.png'),
+      // icon: require('null'),
+      title: "About me",
+      description: "I recently converted an old laptop into a desktop, Installed linux on it for something to do. I enjoy fixing and repairing hardware. I spend my leisure time skateboarding and playing tennis! 🤘",
+      img: require('../../assets/projects/other/linuxComputer/images/merged.JPG'),
+      img2: require('../../assets/myPicture/skating2.gif'),
+
     }
 ];
 const handleClick = (direction) => {
   direction === "left"
-   ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+   ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
    : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0 );
 };
 
@@ -46,14 +48,13 @@ const handleClick = (direction) => {
                   {d.description}
                   {d.award && <a href="../../assets/experiance/diploma.pdf">{d.award}</a>}
                 </p>
-                <span>A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the MVC app development architecture utalising the ruby on rails tech stack</span>
-                <span><a href='https://www.youtube.com/watch?v=jR9xcC7LZD4&t=1s'>Watch one of our presentations</a></span>
+                  <span className="personalDescription"></span>
+                  <span><a href='https://www.youtube.com/watch?v=jR9xcC7LZD4&t=1s'>Watch one of our presentations</a></span>
               </div>
             </div>
             <div className="right">
-              <img className="img1" src={d.img} alt="" />
-              <img className="img2" src={d.img2} alt="" />
-              <p></p>
+              <img className="img1" src={d.img} alt=""/>
+              <img className="img2" src={d.img2} alt=""/>
             </div>
           </div>
         </div>
