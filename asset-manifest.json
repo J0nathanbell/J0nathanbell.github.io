@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2b0de8f.css",
-    "main.js": "/static/js/main.3151590a.js",
+    "main.css": "/static/css/main.384a2cf1.css",
+    "main.js": "/static/js/main.bc49c3fa.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
+    "static/media/skating2.gif": "/static/media/skating2.4d4881cf7a10dfa3c23f.gif",
     "static/media/team.png": "/static/media/team.db177f77942f828b71e3.png",
     "static/media/app.gif": "/static/media/app.c8bb1af36c99ec6c97f4.gif",
     "static/media/pokemon.gif": "/static/media/pokemon.ef7b2d848515488cb458.gif",
+    "static/media/merged.JPG": "/static/media/merged.2c5281ba12288a7c9dac.JPG",
     "static/media/lewagoncrew.jpg": "/static/media/lewagoncrew.f5f7e62248fae8446eeb.jpg",
     "static/media/coolguy3.png": "/static/media/coolguy3.a38ad208e7641de17423.png",
     "static/media/chatting.png": "/static/media/chatting.c6420acc49bf57924edf.png",
     "static/media/scareBnBDemoVideo.webp": "/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
+    "static/media/skatingchilled1.jpg": "/static/media/skatingchilled1.ae1a265ad635aa24cf4d.jpg",
     "static/media/js.png": "/static/media/js.923275cdf7e3c2565687.png",
     "static/media/ruby.png": "/static/media/ruby.c7bc8aaa300e723f7ef8.png",
     "static/media/skatingchilled.jpg": "/static/media/skatingchilled.e82920865202ba92c37b.jpg",
@@ -21,11 +24,11 @@
     "static/media/lewagon.png": "/static/media/lewagon.0d6089e0c4f426c623f5.png",
     "static/media/down.png": "/static/media/down.968dfc21ca8009eaa417.png",
     "index.html": "/index.html",
-    "main.b2b0de8f.css.map": "/static/css/main.b2b0de8f.css.map",
-    "main.3151590a.js.map": "/static/js/main.3151590a.js.map"
+    "main.384a2cf1.css.map": "/static/css/main.384a2cf1.css.map",
+    "main.bc49c3fa.js.map": "/static/js/main.bc49c3fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2b0de8f.css",
-    "static/js/main.3151590a.js"
+    "static/css/main.384a2cf1.css",
+    "static/js/main.bc49c3fa.js"
   ]
 }
