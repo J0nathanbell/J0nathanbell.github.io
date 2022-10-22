@@ -32,23 +32,14 @@
     left: 0vw;
     transition: all 0.6s ease-out;
     overflow: visible;
-
-    // @include mobile{
-    //   display: flex;
-    //   flex-direction: column;
-    // }
     .container{
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: visible;
-      // @include mobile{
-      //   overflow: hidden;
-      // }
-
       .item{
-        width: 700px;
+        width: 40rem;
         height: 100%;
         background-color: grey;
         border-radius: 20px;
@@ -57,12 +48,11 @@
         justify-content: center;
         box-shadow:8px 8px 4px -6px rgb(0, 0, 0);
 
-        // @include mobile{
-        //   width: 90%;
-        //   height: 80%;
-        //   margin: 10px 0;
-
-        // }
+        @include mobile{
+          width: 23rem;
+          height: 18rem;
+          margin: 10px 0;
+        }
 
         .left{
           flex: 4;
@@ -71,7 +61,6 @@
           justify-content: center;
           height: 100%;
           background-color: $backgroundColor2;
-
           .leftcontainer{
             width: 90%;
             height: 95%;
@@ -89,7 +78,6 @@
             h2{
               font-size: 20px;
               color: $textColor1;
-
               @include mobile{
                 font-size: 15px;
               }
@@ -97,20 +85,16 @@
             p{
               font-size: 13px;
               color: $textColor1;
-
               @include mobile{
                 font-size: 10px;
               }
-
             }
             span{
               font-size: 12px;
               font-weight: 600;
-            // cursor: pointer;
               @include mobile{
                 font-size: 10px;
               }
-
             }
           }
         }
@@ -125,19 +109,22 @@
           flex-direction: column;
           // flex-wrap: wrap;
           .img1{
-            height: 19.1rem;
-            width: 30rem;
+            height: 10rem;
             object-fit: cover;
-            object-position: center -1.5rem;
+            @include mobile {
+              object-fit: cover;
+            }
+
           }
           .img2{
+            height: 12rem;
             object-fit: cover;
-            height: 25rem;
-            width: 30rem;
-            // object-position: center -15rem;
+            object-position: 0px -20px;
+            @include mobile {
+              object-position: 0px 0px;
+            }
+
           }
-
-
         }
       }
     }

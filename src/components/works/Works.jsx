@@ -12,7 +12,7 @@ export default function Works() {
       description: "Le wagon coding bootcamp 2021 September - A 9 week intensive fullstack development bootcamp where I made lots of friends and learnt the MVC app development architecture utalising the ruby on rails tech stack",
       award: <EmojiEventsIcon/>,
       img: require('../../assets/myPicture/chatting.png'),
-      img2: require('../../assets/experiance/lewagoncrew.jpg')
+      img2: require('../../assets/experiance/lewagoncrew1.jpg')
     },
     {
       id: "2",
