@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-import './portfolio.scss'
+import "./portfolio.scss";
 import {
   featuredPortfolio,
   webappPortfolio,
   mobilePortfolio,
-  designingPortfolio
+  designingPortfolio,
 } from "../../data.js";
-
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -27,33 +26,32 @@ export default function Portfolio() {
     },
     {
       id: "designing",
-      title: "Python",
-    }
+      title: "IPSO Email bot",
+    },
   ];
 
   useEffect(() => {
-    switch(selected){
+    switch (selected) {
       case "featured":
         setData(featuredPortfolio);
-        break
+        break;
       case "webapp":
         setData(webappPortfolio);
-        break
+        break;
       case "mobile":
         setData(mobilePortfolio);
-        break
+        break;
       case "designing":
         setData(designingPortfolio);
-        break
-        default:
-          setData(featuredPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
     }
   }, [selected]);
 
   return (
-    <div className='portfolio' id="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="topContainer">
-        <h1>Projects</h1>
         <ul>
           {list.map((item) => (
             <PortfolioList
@@ -65,29 +63,18 @@ export default function Portfolio() {
           ))}
         </ul>
       </div>
+
       <div className="container">
-        {data.map((d)=>(
+        {data.map((d) => (
           <div className="item">
-            <h3 className="header">{d.header}</h3>
             <a className="applink" href={d.appLink}>
-              {d.img && <img className='mainImage' src={d.img} alt="" />}
+              <img className="mainImage" src={d.img} alt="" />
             </a>
-            <h3 className="title">{d.title}</h3>
-            {/* <h5>Links</h5> */}
-            <div className="container2">
-              <a className="link" href={d.link}>
-                <img className="hubby" src={d.github} alt=""/>
-              </a>
-              <a className="link2" href={d.link2}>
-              {d.heroku && <img className ="herokuy" src={d.heroku} alt=""/>}
-              {d.ghpages && <img className ="ghpages" src={d.ghpages} alt=""/>}
-              </a>
-            </div>
             <h5>Built with</h5>
             <div className="icon-container">
-              {d.icon && <img className="icon" src={d.icon} alt=""/>}
-              {d.icon2 && <img className="icon2" src={d.icon2} alt=""/>}
-              {d.icon3 && <img className="icon3" src={d.icon3} alt=""/>}
+              {d.icon && <img className="icon" src={d.icon} alt="" />}
+              {d.icon2 && <img className="icon2" src={d.icon2} alt="" />}
+              {d.icon3 && <img className="icon3" src={d.icon3} alt="" />}
             </div>
             <div className="paragraph">
               <p>{d.paragraph}</p>
@@ -96,5 +83,5 @@ export default function Portfolio() {
         ))}
       </div>
     </div>
-  )
+  );
 }

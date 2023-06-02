@@ -25,11 +25,10 @@
       width: 100%;
     }
     h1{
-      font-size: 50px;
+      font-size: 2rem;
       color: $textColor1;
       @include mobile {
         overflow: hidden;
-        // font-size: 1rem;
       }
     }
     ul{
@@ -89,6 +88,7 @@
       }
       .paragraph{
         overflow: hidden;
+        font-size: 1rem;
       }
       &:hover{
         background-color: $backgroundColor1;
