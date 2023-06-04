@@ -1,47 +1,61 @@
 @import "../../global.scss";
 
-ul{
+ul {
   overflow: visible;
-  .portfolioList{
-      transition:all .4s ease;
-      font-size: 25px;
-      margin-right: 1rem;
-      padding: 0.5rem;
-      cursor: pointer;
-      background:transparent;
-      padding:0.3rem 0.3rem;
-      margin:0 0.5rem;
-      color: $textColor1;
+  .portfolioList {
+    transition: all 0.4s ease;
+    font-size: 25px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: transparent;
+    padding: 0.3rem 0.3rem;
+    margin: 0 0.5rem;
+    color: $textColor1;
+    &.active {
+      transform: translateY(-10px);
 
-      &:hover{
-        transform: scale(1.2);
-        border-radius: 15px;
-        background-color: $backgroundColor1;
-        box-shadow:8px 8px 4px -6px hsla(0,0%,0%,.3);
-      }
-    @include mobile {
-      font-size: 1rem;
-    }
-    &:first-child{
-      &.active{
+      &:nth-child(1) {
         color: $textColor3;
+        &:hover {
+          color: $textColor3;
+        }
       }
-    }
-    &:nth-child(2){
-      &.active{
+      &:nth-child(2) {
         color: $textColor4;
+        &:hover {
+          color: $textColor4;
+        }
       }
-    }
-    &:nth-child(3){
-      &.active{
+      &:nth-child(3) {
         color: $textColor5;
+        &:hover {
+          color: $textColor5;
+        }
       }
-    }
-    &:nth-child(4){
-      &.active{
+      &:nth-child(4) {
         color: $textColor6;
+        &:hover {
+          color: $textColor6;
+        }
       }
     }
 
+    &:hover {
+      &:not(.active) {
+        &:nth-child(1) {
+          color: $textColor3;
+        }
+        &:nth-child(2) {
+          color: $textColor4;
+        }
+        &:nth-child(3) {
+          color: $textColor5;
+        }
+        &:nth-child(4) {
+          color: $textColor6;
+        }
+      }
+    }
   }
 }

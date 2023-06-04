@@ -67,15 +67,12 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <a className="applink" href={d.appLink}>
-              <img className="mainImage" src={d.img} alt="" />
-            </a>
-            <h5>Built with</h5>
-            <div className="icon-container">
-              {d.icon && <img className="icon" src={d.icon} alt="" />}
-              {d.icon2 && <img className="icon2" src={d.icon2} alt="" />}
-              {d.icon3 && <img className="icon3" src={d.icon3} alt="" />}
+            <div className="appmedia">
+              <a className="applink" href={d.appLink}>
+                <img src={d.img} alt="" />
+              </a>
             </div>
+
             <div className="paragraph">
               <p>{d.paragraph}</p>
             </div>
