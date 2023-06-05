@@ -25,7 +25,6 @@ export const webappPortfolio = [
     icon: require("./assets/icons/ruby.png"),
     icon2: require("./assets/icons/rails.png"),
     icon3: require("./assets/icons/js.png"),
-    img: require("./assets/projects/apps/whatever/team.png"),
     paragraph: "A airBnB clone, selling horror movie villan, 'rent-a-scairs'",
   },
 ];
@@ -38,7 +37,6 @@ export const mobilePortfolio = [
     ghpages: require("./assets/icons/ghpages.png"),
     link2: "https://j0nathanbell.github.io/pokemon/",
     icon3: require("./assets/icons/js.png"),
-    img: require("./assets/myPicture/skatingchilled1.jpg"),
     paragraph: "A pokedex made with vanilla JS",
   },
 ];
@@ -49,7 +47,6 @@ export const designingPortfolio = [
     github: require("./assets/icons/github.png"),
     link: "https://github.com/J0nathanbell/large_screen_rejection_close",
     icon3: require("./assets/icons/py.png"),
-    img: require("./assets/myPicture/skatingchilled.jpg"),
     paragraph:
       "My first app, a mouse automation app for auto-filling form data",
   },
