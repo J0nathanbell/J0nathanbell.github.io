@@ -43,10 +43,11 @@
         .appimage {
           width: 60rem;
           height: 25rem;
+          object-fit: cover;
+
           @include mobile {
             width: 12em;
             height: 10rem;
-            object-fit: cover;
           }
         }
         .applink {
@@ -58,14 +59,13 @@
         }
       }
       .paragraph-box {
-        display: block;
         margin: 1rem;
         color: $textColor1;
-        text-align: left;
+        text-align: center;
         @include mobile {
+          justify-content: center;
           display: flex;
           align-items: center;
-          justify-content: center;
           margin: 0.5rem;
           background-color: $backgroundColor1;
           width: auto;

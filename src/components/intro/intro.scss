@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .intro {
   background-color: $backgroundColor2;
@@ -11,8 +11,8 @@
     align-items: center;
   }
 
-  .left{
-    flex:0.5;
+  .left {
+    flex: 0.5;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -21,7 +21,7 @@
       flex: 0.5;
     }
 
-    .imgContainer{
+    .imgContainer {
       width: 20rem;
       height: 20rem;
       background-color: $backgroundColor1;
@@ -33,11 +33,10 @@
       float: right;
       transition: all 0.4s ease;
       overflow: hidden;
-      &:hover{
+      &:hover {
         background-color: rgba($color: #c778dd, $alpha: 0.2);
         transition: all 0.4s ease;
         border-radius: 50%;
-
       }
       @include mobile {
         align-items: flex-start;
@@ -45,7 +44,7 @@
         height: 12rem;
         overflow: hidden;
       }
-      img{
+      img {
         width: 14rem;
 
         transition: all 0.8s ease;
@@ -54,99 +53,93 @@
         }
         @include mobile {
           width: 9rem;
-          }
+        }
       }
       &.active {
         border: 2px solid $textColor3;
       }
     }
   }
-  .right{
-    flex:0.5;
+  .right {
+    flex: 0.5;
     position: relative;
     // border: 5px solid green;
 
     @include mobile {
       background-color: transparent;
     }
-    .wrapper{
+    .wrapper {
       // border: 5px solid yellow;
       width: 100%;
-      height: 100%;
+      height: 80%;
       display: flex;
       flex-direction: column;
       padding-left: 50px;
       justify-content: center;
       overflow: hidden;
 
-      @include mobile{
+      @include mobile {
         padding-left: 0px;
         align-items: center;
         overflow: hidden;
-
       }
 
-      h1{
+      h1 {
         color: $textColor4;
         margin: 10px 0;
         font-size: 60px;
-        @include mobile{
+        @include mobile {
           margin-bottom: 0.5rem;
           font-size: 1.3rem;
           overflow: hidden;
-
         }
       }
-      h2{
+      h2 {
         color: $textColor2;
         font-size: 35px;
-        @include mobile{
-          font-size:1rem;
+        @include mobile {
+          font-size: 1rem;
           overflow: hidden;
-
         }
       }
-      h3{
+      h3 {
         color: $textColor6;
         font-size: 30px;
         padding-bottom: 0.5rem;
-        @include mobile{
-          font-size:1rem;
+        @include mobile {
+          font-size: 1rem;
           overflow: hidden;
           padding-bottom: 0.5rem;
-
         }
-        span{
+        span {
           color: $textColor3;
           padding-bottom: 0.5rem;
-
         }
         .ityped-cursor {
           animation: blink 0.65s infinite;
         }
-          @keyframes blink {
-            50%{
-              opacity: 1;
-            }
-            100% {
-              opacity: 0;
-            }
+        @keyframes blink {
+          50% {
+            opacity: 1;
           }
-
+          100% {
+            opacity: 0;
+          }
+        }
       }
 
-      a{
+      a {
         // position: absolute;
         // border: 5px solid blue;
-        padding-top: 1rem;
+        padding-top: 2rem;
 
-        .arrowContainer{
+        .arrowContainer {
           position: relative;
           // border: 5px solid #c778dd;
           width: 7rem;
           height: 5rem;
           display: flex;
-          align-items:flex-start;
+          align-items: flex-start;
           justify-content: center;
           cursor: pointer;
           @include mobile {
@@ -156,14 +149,14 @@
             position: absolute;
             margin-right: 2.5rem;
             // left: 8.25rem;
-            transition: all .4s ease;
+            transition: all 0.4s ease;
             width: 5rem;
             height: 0.25rem;
             background-color: $textColor1;
             transform-origin: left;
             transform: rotate(45deg);
             animation: arrowBlink 2s infinite;
-            &.active{
+            &.active {
               background-color: $textColor3;
             }
           }
@@ -172,21 +165,20 @@
             // right: 8.25rem;
             margin-left: 2.5rem;
 
-            transition: all .4s ease;
+            transition: all 0.4s ease;
             width: 5rem;
             height: 0.25rem;
             transform: rotate(-45deg);
             background-color: $textColor1;
             transform-origin: right;
             animation: arrowBlink 2s infinite;
-            &.active{
+            &.active {
               background-color: $textColor3;
             }
           }
         }
         @keyframes arrowBlink {
-
-          100%{
+          100% {
             opacity: 0;
           }
         }
