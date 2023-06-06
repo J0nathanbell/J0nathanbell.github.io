@@ -11,7 +11,6 @@
     transition: all 0.4s ease-in-out;
   }
   .wrapper {
-
     padding: 0.25rem 2rem;
     display: flex;
     align-items: center;
@@ -20,12 +19,11 @@
       padding: 0.25rem 1rem;
     }
 
-
     .left {
       display: flex;
       // border: 2px solid red;
       align-items: center;
-      .nameContainer{
+      .nameContainer {
         // border: 2px solid blue;
         .logo {
           font-size: 2rem;
@@ -37,7 +35,7 @@
             transition: all 0.4s ease-in-out;
             color: $textColor1;
             text-decoration: none;
-            &:hover{
+            &:hover {
               color: $textColor6;
             }
           }
@@ -53,44 +51,45 @@
         justify-content: space-evenly;
         .icon {
           padding-top: 0.8rem;
+          overflow: visible;
           @include mobile {
             padding-top: 0rem;
           }
 
-          svg{
+          svg {
             flex-shrink: 0;
             color: $textColor1;
             text-decoration: none;
             font-size: 1.2rem;
             transition: all 0.4s ease-in-out;
             &:hover {
-              font-size: 1.8rem;
+              scale: 1.4;
               transition: all 0.4s ease-in-out;
             }
           }
           &:first-child {
-            svg{
+            svg {
               &:hover {
                 color: $textColor4;
               }
             }
           }
           &:nth-child(2) {
-            svg{
+            svg {
               &:hover {
                 color: $textColor3;
               }
             }
           }
           &:nth-child(3) {
-            svg{
+            svg {
               &:hover {
                 color: $textColor2;
               }
             }
           }
           &:nth-child(4) {
-            svg{
+            svg {
               &:hover {
                 color: $textColor5;
               }
@@ -100,13 +99,7 @@
       }
     }
 
-
-
-
-
-
     .right {
-
       .hamburger {
         overflow-y: hidden;
         overflow-x: hidden;
@@ -116,8 +109,8 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        &:hover{
-          span{
+        &:hover {
+          span {
             background-color: $textColor2;
           }
         }
@@ -131,27 +124,26 @@
     }
   }
   &.active {
-    .left{
+    .left {
       .iconContainer {
-        .icon{
-          svg{
+        .icon {
+          svg {
             color: $textColor3;
           }
         }
       }
-      .nameContainer{
-        .logo{
-          a{
+      .nameContainer {
+        .logo {
+          a {
             color: $textColor3;
           }
         }
       }
     }
     .hamburger {
-
-      &:hover{
-        span{
-          &:first-child{
+      &:hover {
+        span {
+          &:first-child {
             background-color: $textColor3;
           }
           &:last-child {
@@ -160,7 +152,6 @@
         }
       }
       span {
-
         &:first-child {
           transform: rotate(45deg);
           background-color: $textColor3;
