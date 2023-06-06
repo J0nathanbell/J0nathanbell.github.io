@@ -15,9 +15,9 @@
 
   .container {
     display: flex;
-    width: 60rem;
-    height: 18rem;
-    justify-content: flex-start;
+    width: 50rem;
+    height: 30rem;
+    justify-content: center;
     align-items: center;
 
     @include mobile {
@@ -27,45 +27,51 @@
     }
 
     .item {
+      flex-direction: column;
+      background-color: rgb(18, 18, 18);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+        rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+      border-radius: 4px;
       display: flex;
-      height: 12rem;
-      align-items: center;
-      width: 60rem;
-      overflow: hidden;
+      height: auto;
+      // align-items: center;
+      width: auto;
+      // overflow: hidden;
       @include mobile {
         width: 15rem;
         overflow: visible;
         flex-direction: column-reverse;
       }
-
-      .applink {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40rem;
-        @include mobile {
-        }
+      .appmedia {
         .appimage {
-          max-inline-size: 100%;
-          block-size: auto;
-          object-fit: contain;
+          width: 60rem;
+          height: 25rem;
           @include mobile {
             width: 15em;
-            // height: 30rem;
+            height: 10rem;
             flex-direction: column;
+          }
+        }
+        .applink {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include mobile {
           }
         }
       }
       .paragraph {
+        display: block;
         margin: 1rem;
-        overflow: hidden;
+        // overflow: hidden;
         font-size: 1.2rem;
         color: $textColor1;
         text-align: center;
-        width: 20rem;
+        // width: 20rem;
         @include mobile {
-          width: 15rem;
-          height: 5rem;
+          width: auto;
+          height: auto;
+          text-align: left;
         }
       }
 
