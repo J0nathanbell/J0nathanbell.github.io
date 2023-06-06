@@ -4,7 +4,6 @@ ul {
   overflow: visible;
   .portfolioList {
     transition: all 0.4s ease;
-    font-size: 25px;
     margin-right: 1rem;
     padding: 0.5rem;
     cursor: pointer;
@@ -12,6 +11,8 @@ ul {
     padding: 0.3rem 0.3rem;
     margin: 0 0.5rem;
     color: $textColor1;
+    // font-size: 1.5rem;
+
     &.active {
       transform: translateY(-10px);
       text-decoration: underline;
@@ -57,6 +58,15 @@ ul {
           color: $textColor6;
         }
       }
+    }
+    @include tablet {
+      font-size: 10rem;
+    }
+    @include big-mobile {
+      font-size: 10rem;
+    }
+    @include mobile {
+      font-size: 0.75rem;
     }
   }
 }
