@@ -69,7 +69,7 @@ export default function Portfolio() {
           <div className="item">
             <div className="appmedia">
               <a className="applink" href={d.appLink}>
-                <img src={d.img} alt="" />
+                <img className="appimage" src={d.img} alt="" />
               </a>
             </div>
 

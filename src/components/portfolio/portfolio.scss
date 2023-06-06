@@ -9,7 +9,7 @@
 
   @include mobile {
     flex-direction: column;
-    // justify-content: flex-start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -22,7 +22,7 @@
 
     @include mobile {
       width: 35rem;
-      height: 30rem;
+      height: auto;
       flex-direction: column;
     }
 
@@ -35,7 +35,6 @@
       @include mobile {
         width: 15rem;
         overflow: visible;
-        height: 10rem;
         flex-direction: column-reverse;
       }
 
@@ -46,14 +45,13 @@
         width: 40rem;
         @include mobile {
         }
-        img {
+        .appimage {
           max-inline-size: 100%;
           block-size: auto;
           object-fit: contain;
           @include mobile {
-            width: 35rem;
-
-            height: 30rem;
+            width: 15em;
+            // height: 30rem;
             flex-direction: column;
           }
         }
@@ -66,7 +64,7 @@
         text-align: center;
         width: 20rem;
         @include mobile {
-          width: 20rem;
+          width: 15rem;
           height: 5rem;
         }
       }
