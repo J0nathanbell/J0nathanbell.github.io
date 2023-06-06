@@ -73,8 +73,8 @@ export default function Portfolio() {
               </a>
             </div>
 
-            <div className="paragraph">
-              <p>{d.paragraph}</p>
+            <div className="paragraph-box">
+              <p className="paragraph-text">{d.paragraph}</p>
             </div>
           </div>
         ))}

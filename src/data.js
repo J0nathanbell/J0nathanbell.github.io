@@ -37,7 +37,7 @@ export const mobilePortfolio = [
     ghpages: require("./assets/icons/ghpages.png"),
     link2: "https://j0nathanbell.github.io/pokemon/",
     icon3: require("./assets/icons/js.png"),
-    paragraph: "A pokedex made with vanilla JS",
+    paragraph: "A fun Pokedex app made with Vanilla JS",
   },
 ];
 export const designingPortfolio = [
@@ -48,6 +48,6 @@ export const designingPortfolio = [
     link: "https://github.com/J0nathanbell/large_screen_rejection_close",
     icon3: require("./assets/icons/py.png"),
     paragraph:
-      "My first app, a mouse automation app for auto-filling form data",
+      "A mouse automation app for entering form data and sending emails",
   },
 ];
