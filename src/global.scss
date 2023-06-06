@@ -9,8 +9,8 @@ $backgroundColor1: rgb(40, 44, 52);
 $backgroundColor2: #1d1f23;
 
 $tablet-width: 923px;
-$big-mobile-width: 650px;
-$mobile-width: 400px;
+$big-mobile-width: 691px;
+$mobile-width: 534px;
 
 @mixin tablet {
   @media (max-width: #{$tablet-width}) {

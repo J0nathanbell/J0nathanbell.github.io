@@ -9,47 +9,8 @@
 
   @include mobile {
     flex-direction: column;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     align-items: center;
-  }
-
-  .topContainer {
-    background-color: $backgroundColor2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    overflow: hidden;
-
-    @include tablet {
-    }
-
-    @include mobile {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-    }
-
-    ul {
-      z-index: 1;
-      margin: 10px;
-      padding: 0px;
-      list-style: none;
-      display: flex;
-      color: $textColor1;
-
-      @include mobile {
-        height: 10rem;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px 0;
-      }
-      // li {
-      //   font-size: 1.5rem;
-      // }
-    }
   }
 
   .container {
@@ -71,16 +32,30 @@
       align-items: center;
       width: 60rem;
       overflow: hidden;
+      @include mobile {
+        width: 15rem;
+        overflow: visible;
+        height: 10rem;
+        flex-direction: column-reverse;
+      }
+
       .applink {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40rem;
-
+        @include mobile {
+        }
         img {
           max-inline-size: 100%;
           block-size: auto;
           object-fit: contain;
+          @include mobile {
+            width: 35rem;
+
+            height: 30rem;
+            flex-direction: column;
+          }
         }
       }
       .paragraph {
@@ -90,6 +65,10 @@
         color: $textColor1;
         text-align: center;
         width: 20rem;
+        @include mobile {
+          width: 20rem;
+          height: 5rem;
+        }
       }
 
       @include tablet {

@@ -1,5 +1,5 @@
 @import "../../global.scss";
-.works{
+.works {
   background-color: $backgroundColor1;
   color: $textColor1;
   display: flex;
@@ -7,38 +7,36 @@
   justify-content: space-between;
   position: relative;
 
-
-  .arrow{
+  .arrow {
     height: 70px;
     position: absolute;
     cursor: pointer;
     @include mobile {
       position: static;
-
     }
-    &.left{
+    &.left {
       left: 100px;
       transform: rotate(90deg);
     }
-    &.right{
+    &.right {
       right: 100px;
       transform: rotate(270deg);
     }
   }
-  .slider{
+  .slider {
     height: 18rem;
     display: flex;
     position: absolute;
     left: 0vw;
     transition: all 0.6s ease-out;
     overflow: visible;
-    .container{
+    .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: visible;
-      .item{
+      .item {
         width: 40rem;
         height: 100%;
         background-color: grey;
@@ -46,59 +44,59 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow:8px 8px 4px -6px rgb(0, 0, 0);
+        box-shadow: 8px 8px 4px -6px rgb(0, 0, 0);
 
-        @include mobile{
+        @include mobile {
           width: 23rem;
           height: 18rem;
           margin: 10px 0;
         }
 
-        .left{
+        .left {
           flex: 4;
           display: flex;
           align-items: center;
           justify-content: center;
           height: 100%;
           background-color: $backgroundColor2;
-          .leftcontainer{
+          .leftcontainer {
             width: 90%;
             height: 95%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .imgcontainer{
+            .imgcontainer {
               display: flex;
               align-items: flex-start;
               justify-content: center;
             }
-            img{
+            img {
               border-radius: 15px;
             }
-            h2{
+            h2 {
               font-size: 20px;
               color: $textColor1;
-              @include mobile{
+              @include mobile {
                 font-size: 15px;
               }
             }
-            p{
+            p {
               font-size: 13px;
               color: $textColor1;
-              @include mobile{
+              @include mobile {
                 font-size: 10px;
               }
             }
-            span{
+            span {
               font-size: 12px;
               font-weight: 600;
-              @include mobile{
+              @include mobile {
                 font-size: 10px;
               }
             }
           }
         }
-        .right{
+        .right {
           flex: 8;
           height: 100%;
           width: 10rem;
@@ -107,23 +105,20 @@
           overflow: hidden;
           justify-content: center;
           flex-direction: column;
-          // flex-wrap: wrap;
-          .img1{
+          .img1 {
             height: 10rem;
             object-fit: cover;
             @include mobile {
               object-fit: cover;
             }
-
           }
-          .img2{
+          .img2 {
             height: 12rem;
             object-fit: cover;
             object-position: 0px -20px;
             @include mobile {
               object-position: 0px 0px;
             }
-
           }
         }
       }

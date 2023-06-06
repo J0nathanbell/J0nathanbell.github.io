@@ -52,7 +52,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="topContainer">
-        <ul>
+        <ul className="portfolio-list">
           {list.map((item) => (
             <PortfolioList
               title={item.title}
