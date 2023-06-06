@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30f73b8a.css",
-    "main.js": "/static/js/main.0e17f6f7.js",
+    "main.css": "/static/css/main.4c197a92.css",
+    "main.js": "/static/js/main.09665b96.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
     "static/media/skating2.gif": "/static/media/skating2.4d4881cf7a10dfa3c23f.gif",
     "static/media/team.png": "/static/media/team.db177f77942f828b71e3.png",
@@ -12,10 +12,8 @@
     "static/media/chatting.png": "/static/media/chatting.c6420acc49bf57924edf.png",
     "static/media/scareBnBDemoVideo.webp": "/static/media/scareBnBDemoVideo.b92dc675538359182469.webp",
     "static/media/lewagoncrew1.jpg": "/static/media/lewagoncrew1.71a6c6676bbc391c9ad7.jpg",
-    "static/media/skatingchilled1.jpg": "/static/media/skatingchilled1.ae1a265ad635aa24cf4d.jpg",
     "static/media/js.png": "/static/media/js.923275cdf7e3c2565687.png",
     "static/media/ruby.png": "/static/media/ruby.c7bc8aaa300e723f7ef8.png",
-    "static/media/skatingchilled.jpg": "/static/media/skatingchilled.e82920865202ba92c37b.jpg",
     "static/media/ghpages.png": "/static/media/ghpages.e7418b93e4a6c18c6341.png",
     "static/media/py.png": "/static/media/py.f1a07429fcf04073a41e.png",
     "static/media/rails.png": "/static/media/rails.c87f032e560c7a8da82c.png",
@@ -24,11 +22,11 @@
     "static/media/lewagon.png": "/static/media/lewagon.0d6089e0c4f426c623f5.png",
     "static/media/down.png": "/static/media/down.968dfc21ca8009eaa417.png",
     "index.html": "/index.html",
-    "main.30f73b8a.css.map": "/static/css/main.30f73b8a.css.map",
-    "main.0e17f6f7.js.map": "/static/js/main.0e17f6f7.js.map"
+    "main.4c197a92.css.map": "/static/css/main.4c197a92.css.map",
+    "main.09665b96.js.map": "/static/js/main.09665b96.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f73b8a.css",
-    "static/js/main.0e17f6f7.js"
+    "static/css/main.4c197a92.css",
+    "static/js/main.09665b96.js"
   ]
 }
