@@ -18,6 +18,8 @@
 
     @include mobile {
       padding-top: 1rem;
+      padding-bottom: 1rem;
+
       overflow: visible;
       display: flex;
       align-items: center;
