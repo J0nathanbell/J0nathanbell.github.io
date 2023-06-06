@@ -56,17 +56,6 @@
             padding-top: 0rem;
           }
 
-          svg {
-            flex-shrink: 0;
-            color: $textColor1;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.4s ease-in-out;
-            &:hover {
-              scale: 1.4;
-              transition: all 0.4s ease-in-out;
-            }
-          }
           &:first-child {
             svg {
               &:hover {
@@ -93,6 +82,17 @@
               &:hover {
                 color: $textColor5;
               }
+            }
+          }
+          svg {
+            flex-shrink: 0;
+            color: $textColor1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              scale: 1.4;
+              transition: all 0.4s ease-in-out;
             }
           }
         }

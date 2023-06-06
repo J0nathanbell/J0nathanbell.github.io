@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: space-evenly;
   overflow: hidden;
-
+  @include mobile {
+    overflow: visible;
+  }
   .portfolio-list {
     display: flex;
     overflow: visible;
@@ -15,7 +17,10 @@
     padding-inline-start: 0px;
 
     @include mobile {
+      padding-top: 1rem;
+      overflow: visible;
       display: flex;
+      align-items: center;
       flex-direction: column;
       margin-block-start: 0em;
       margin-block-end: 0em;
@@ -42,14 +47,18 @@
       }
       @include mobile {
         padding: 0rem;
-
         font-size: 0.75rem;
-        overflow: hidden;
+        overflow: visible;
       }
 
       &.active {
-        transform: translateX(10px);
+        transform: translateY(-15px);
         text-decoration: underline;
+        @include mobile {
+          transform: translateY(0px);
+          text-decoration: underline;
+          scale: 1.4;
+        }
 
         &:nth-child(1) {
           color: $textColor3;
