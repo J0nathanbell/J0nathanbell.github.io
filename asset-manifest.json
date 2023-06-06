@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b2ae431.css",
+    "main.css": "/static/css/main.88231695.css",
     "main.js": "/static/js/main.f6d7ccc9.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
     "static/media/skating2.gif": "/static/media/skating2.4d4881cf7a10dfa3c23f.gif",
@@ -22,11 +22,11 @@
     "static/media/lewagon.png": "/static/media/lewagon.0d6089e0c4f426c623f5.png",
     "static/media/down.png": "/static/media/down.968dfc21ca8009eaa417.png",
     "index.html": "/index.html",
-    "main.9b2ae431.css.map": "/static/css/main.9b2ae431.css.map",
+    "main.88231695.css.map": "/static/css/main.88231695.css.map",
     "main.f6d7ccc9.js.map": "/static/js/main.f6d7ccc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b2ae431.css",
+    "static/css/main.88231695.css",
     "static/js/main.f6d7ccc9.js"
   ]
 }
