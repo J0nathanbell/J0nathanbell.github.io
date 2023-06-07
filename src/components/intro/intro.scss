@@ -81,7 +81,7 @@
         padding-left: 0px;
         align-items: center;
         overflow: visible;
-        height: 80%;
+        height: 60%;
       }
 
       h1 {
@@ -97,7 +97,7 @@
 
         @include mobile {
           margin-bottom: 0.5rem;
-          font-size: 1.3rem;
+          font-size: 2rem;
           overflow: hidden;
         }
       }
@@ -163,6 +163,7 @@
           // align-items: center;
           // justify-content: center;
           @include mobile {
+            padding-top: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
