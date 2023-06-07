@@ -137,7 +137,7 @@
           position: relative;
           // border: 5px solid #c778dd;
           width: 7rem;
-          height: 5rem;
+          height: 3.3rem;
           display: flex;
           align-items: flex-start;
           justify-content: center;
@@ -146,6 +146,7 @@
             overflow: hidden;
           }
           .arrow1 {
+            overflow: hidden;
             position: absolute;
             margin-right: 2.5rem;
             // left: 8.25rem;
