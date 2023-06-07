@@ -141,62 +141,66 @@
         }
       }
 
-      a {
+      .arrow-container-link {
         padding-top: 2rem;
         overflow: visible;
+        // border: 2px solid red;
+        display: inline-block;
+        width: 10rem;
+        height: 5rem;
 
         @include mobile {
-          overflow: visible;
+          // border: 2px solid red;
+          padding-top: 0rem;
         }
-        .arrow-container-link {
-          overflow: visible;
 
-          .arrow-container {
-            position: relative;
-            overflow: visible;
-            width: fit-content;
-            height: fit-content;
+        .arrow-container {
+          width: 10rem;
+          height: 5rem;
+          // border: 2px solid blue;
+          cursor: pointer;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          @include mobile {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            cursor: pointer;
+          }
 
-            @include mobile {
-            }
-            .arrow-1 {
-              position: absolute;
-              margin-right: 2.5rem;
-              // left: 8.25rem;
-              transition: all 0.4s ease;
-              width: 5rem;
-              height: 0.25rem;
-              background-color: $textColor1;
-              transform-origin: left;
-              transform: rotate(45deg);
-              animation: arrowBlink 2s infinite;
-              &.active {
-                background-color: $textColor3;
-              }
-            }
-            .arrow-2 {
-              position: absolute;
-              margin-left: 2.5rem;
-              transition: all 0.4s ease;
-              width: 5rem;
-              height: 0.25rem;
-              transform: rotate(-45deg);
-              background-color: $textColor1;
-              transform-origin: right;
-              animation: arrowBlink 2s infinite;
-              &.active {
-                background-color: $textColor3;
-              }
+          .arrow-1 {
+            position: absolute;
+            margin-right: 2.5rem;
+            // left: 8.25rem;
+            transition: all 0.4s ease;
+            width: 5rem;
+            height: 0.25rem;
+            background-color: $textColor1;
+            transform-origin: left;
+            transform: rotate(40deg);
+            animation: arrowBlink 1.2s infinite;
+            &.active {
+              background-color: $textColor3;
             }
           }
-          @keyframes arrowBlink {
-            100% {
-              opacity: 0;
+          .arrow-2 {
+            position: absolute;
+            margin-left: 2.5rem;
+            transition: all 0.4s ease;
+            width: 5rem;
+            height: 0.25rem;
+            transform: rotate(-40deg);
+            background-color: $textColor1;
+            transform-origin: right;
+            animation: arrowBlink 1.2s infinite;
+            &.active {
+              background-color: $textColor3;
             }
+          }
+        }
+        @keyframes arrowBlink {
+          100% {
+            opacity: 0;
           }
         }
       }
