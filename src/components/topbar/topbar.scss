@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "./topbar-right.scss";
 
 .topbar {
   background-color: $backgroundColor1;
@@ -7,8 +8,21 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  span {
-    transition: all 0.4s ease-in-out;
+  &.active {
+    .wrapper {
+      .left {
+        .iconContainer {
+          .icon {
+            svg {
+              color: $textColor3;
+            }
+          }
+        }
+      }
+    }
+    #myname {
+      color: $textColor3;
+    }
   }
   .wrapper {
     padding: 0.25rem 2rem;
@@ -18,13 +32,10 @@
     @include mobile {
       padding: 0.25rem 1rem;
     }
-
     .left {
       display: flex;
-      // border: 2px solid red;
       align-items: center;
       .nameContainer {
-        // border: 2px solid blue;
         .logo {
           font-size: 2rem;
           font-weight: 700;
@@ -32,7 +43,7 @@
             display: none;
           }
           a {
-            transition: all 0.4s ease-in-out;
+            transition: all 0.3s ease-in-out;
             color: $textColor1;
             text-decoration: none;
             &:hover {
@@ -42,7 +53,6 @@
         }
       }
       .iconContainer {
-        // border: 2px solid green;
         display: flex;
         align-items: center;
         width: 10rem;
@@ -55,7 +65,6 @@
           @include mobile {
             padding-top: 0rem;
           }
-
           &:first-child {
             svg {
               &:hover {
@@ -89,79 +98,12 @@
             color: $textColor1;
             text-decoration: none;
             font-size: 1.2rem;
-            transition: all 0.4s ease-in-out;
+            transition: all 0.3s ease-in-out;
             &:hover {
               scale: 1.4;
-              transition: all 0.4s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }
           }
-        }
-      }
-    }
-
-    .right {
-      .hamburger {
-        overflow-y: hidden;
-        overflow-x: hidden;
-        width: 2rem;
-        height: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        &:hover {
-          span {
-            background-color: $textColor2;
-          }
-        }
-        span {
-          width: 2rem;
-          height: 0.18rem;
-          background-color: $textColor1;
-          transform-origin: left;
-        }
-      }
-    }
-  }
-  &.active {
-    .left {
-      .iconContainer {
-        .icon {
-          svg {
-            color: $textColor3;
-          }
-        }
-      }
-      .nameContainer {
-        .logo {
-          a {
-            color: $textColor3;
-          }
-        }
-      }
-    }
-    .hamburger {
-      &:hover {
-        span {
-          &:first-child {
-            background-color: $textColor3;
-          }
-          &:last-child {
-            background-color: $textColor3;
-          }
-        }
-      }
-      span {
-        &:first-child {
-          transform: rotate(45deg);
-          background-color: $textColor3;
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          background-color: $textColor3;
-          transform: rotate(-45deg);
         }
       }
     }

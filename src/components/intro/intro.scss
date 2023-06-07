@@ -67,6 +67,7 @@
 
     @include mobile {
       background-color: transparent;
+      overflow: visible;
     }
     .wrapper {
       // border: 5px solid yellow;
@@ -76,12 +77,12 @@
       flex-direction: column;
       padding-left: 50px;
       justify-content: center;
-      overflow: hidden;
+      // overflow: hidden;
 
       @include mobile {
         padding-left: 0px;
         align-items: center;
-        overflow: hidden;
+        overflow: visible;
       }
 
       h1 {
@@ -129,58 +130,61 @@
       }
 
       a {
-        // position: absolute;
-        // border: 5px solid blue;
         padding-top: 2rem;
+        overflow: visible;
 
-        .arrowContainer {
-          position: relative;
-          // border: 5px solid #c778dd;
-          width: 7rem;
-          height: 3.3rem;
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-          cursor: pointer;
-          @include mobile {
-            overflow: hidden;
-          }
-          .arrow1 {
-            overflow: hidden;
-            position: absolute;
-            margin-right: 2.5rem;
-            // left: 8.25rem;
-            transition: all 0.4s ease;
-            width: 5rem;
-            height: 0.25rem;
-            background-color: $textColor1;
-            transform-origin: left;
-            transform: rotate(45deg);
-            animation: arrowBlink 2s infinite;
-            &.active {
-              background-color: $textColor3;
-            }
-          }
-          .arrow2 {
-            position: absolute;
-            // right: 8.25rem;
-            margin-left: 2.5rem;
-
-            transition: all 0.4s ease;
-            width: 5rem;
-            height: 0.25rem;
-            transform: rotate(-45deg);
-            background-color: $textColor1;
-            transform-origin: right;
-            animation: arrowBlink 2s infinite;
-            &.active {
-              background-color: $textColor3;
-            }
-          }
+        @include mobile {
+          overflow: visible;
         }
-        @keyframes arrowBlink {
-          100% {
-            opacity: 0;
+        .arrow-container-link {
+          overflow: visible;
+
+          .arrow-container {
+            position: relative;
+            overflow: visible;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            cursor: pointer;
+
+            @include mobile {
+            }
+            .arrow-1 {
+              position: absolute;
+              margin-right: 2.5rem;
+              // left: 8.25rem;
+              transition: all 0.4s ease;
+              width: 5rem;
+              height: 0.25rem;
+              background-color: $textColor1;
+              transform-origin: left;
+              transform: rotate(45deg);
+              animation: arrowBlink 2s infinite;
+              &.active {
+                background-color: $textColor3;
+              }
+            }
+            .arrow-2 {
+              position: absolute;
+              margin-left: 2.5rem;
+              transition: all 0.4s ease;
+              width: 5rem;
+              height: 0.25rem;
+              transform: rotate(-45deg);
+              background-color: $textColor1;
+              transform-origin: right;
+              animation: arrowBlink 2s infinite;
+              &.active {
+                background-color: $textColor3;
+              }
+            }
+          }
+          @keyframes arrowBlink {
+            100% {
+              opacity: 0;
+            }
           }
         }
       }
