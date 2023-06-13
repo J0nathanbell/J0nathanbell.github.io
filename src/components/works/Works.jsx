@@ -50,19 +50,19 @@ export default function Works() {
             </div>
           </div>
         ))}
-        <img
-          src={require("../../assets/icons/down.png")}
-          className="arrow right"
-          alt=""
-          onClick={() => handleClick("left")}
-        />
-        <img
-          src={require("../../assets/icons/down.png")}
-          className="arrow left"
-          alt=""
-          onClick={() => handleClick()}
-        />
       </div>
+      <img
+        src={require("../../assets/icons/down.png")}
+        className="arrow right"
+        alt=""
+        onClick={() => handleClick("left")}
+      />
+      <img
+        src={require("../../assets/icons/down.png")}
+        className="arrow left"
+        alt=""
+        onClick={() => handleClick()}
+      />
     </div>
   );
 }
