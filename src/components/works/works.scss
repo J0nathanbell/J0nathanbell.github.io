@@ -5,14 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: relative; // Add position relative to the container
 
   .arrow {
+    // z-index: 1; // Increase the z-index to ensure arrows are above the slider
     height: 70px;
-    position: absolute;
     cursor: pointer;
     @include mobile {
-      position: static;
+      // position: static;
     }
     &.left {
       left: 100px;
@@ -27,34 +27,11 @@
     height: 18rem;
     display: flex;
     position: absolute;
-    left: 0vw;
+    // left: 0;
+    // right: 0; // Add right: 0 to stretch the slider to the container width
     transition: all 0.6s ease-out;
     overflow: visible;
-    // .arrow {
-    //   height: 70px;
-    //   position: absolute;
-    //   cursor: pointer;
-
-    //   @include mobile {
-    //     bottom: 9rem;
-    //   }
-    // }
-    // .arrow-left {
-    //   transform: rotate(90deg);
-    //   // left: -100px;
-    //   @include mobile {
-    //     left: 6rem;
-    //   }
-    // }
-    // .arrow-right {
-    //   transform: rotate(270deg);
-    //   left: 70rem;
-    //   @include tablet {
-    //   }
-    //   @include mobile {
-    //     right: 6rem;
-    //   }
-    // }
+    // z-index: 1; // Add a z-index to ensure slider is below the arrows
 
     .container {
       width: 100vw;

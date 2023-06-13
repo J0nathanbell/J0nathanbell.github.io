@@ -15,6 +15,13 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
+      <img
+        src={require("../../assets/icons/down.png")}
+        className="arrow left"
+        alt=""
+        onClick={() => handleClick("left")}
+      />
+
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -54,12 +61,6 @@ export default function Works() {
       <img
         src={require("../../assets/icons/down.png")}
         className="arrow right"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src={require("../../assets/icons/down.png")}
-        className="arrow left"
         alt=""
         onClick={() => handleClick()}
       />
