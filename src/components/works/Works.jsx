@@ -52,13 +52,13 @@ export default function Works() {
         ))}
         <img
           src={require("../../assets/icons/down.png")}
-          className="arrow arrow-right"
+          className="arrow right"
           alt=""
           onClick={() => handleClick("left")}
         />
         <img
           src={require("../../assets/icons/down.png")}
-          className="arrow arrow-left"
+          className="arrow left"
           alt=""
           onClick={() => handleClick()}
         />
