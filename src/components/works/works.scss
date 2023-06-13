@@ -7,22 +7,6 @@
   justify-content: space-between;
   position: relative;
 
-  .arrow {
-    height: 70px;
-    position: absolute;
-    cursor: pointer;
-    @include mobile {
-      position: static;
-    }
-    &.left {
-      left: 100px;
-      transform: rotate(90deg);
-    }
-    &.right {
-      right: 100px;
-      transform: rotate(270deg);
-    }
-  }
   .slider {
     height: 18rem;
     display: flex;
@@ -30,6 +14,32 @@
     left: 0vw;
     transition: all 0.6s ease-out;
     overflow: visible;
+    .arrow {
+      height: 70px;
+      position: absolute;
+      cursor: pointer;
+
+      @include mobile {
+        bottom: 9rem;
+      }
+    }
+    .arrow-left {
+      transform: rotate(90deg);
+      // left: -100px;
+      @include mobile {
+        left: 6rem;
+      }
+    }
+    .arrow-right {
+      transform: rotate(270deg);
+      left: 70rem;
+      @include tablet {
+      }
+      @include mobile {
+        right: 6rem;
+      }
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -37,18 +47,26 @@
       justify-content: center;
       overflow: visible;
       .item {
-        width: 40rem;
-        height: 100%;
-        background-color: grey;
+        width: 60rem;
+        height: 40rem;
+        background-color: $backgroundColor2;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         box-shadow: 8px 8px 4px -6px rgb(0, 0, 0);
+        @include tablet {
+          width: 35rem;
+        }
+        @include big-mobile {
+          width: 25rem;
+          height: 36rem;
+          flex-direction: column;
+        }
 
         @include mobile {
           width: 23rem;
-          height: 18rem;
+          height: 42rem;
           margin: 10px 0;
         }
 
@@ -57,8 +75,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 100%;
           background-color: $backgroundColor2;
+          justify-content: center;
+          height: 25rem;
+          background-color: #1d1f23;
+          @include big-mobile {
+            flex: none;
+            height: 18rem;
+          }
           .leftcontainer {
             width: 90%;
             height: 95%;
@@ -69,29 +93,30 @@
               display: flex;
               align-items: flex-start;
               justify-content: center;
+              width: 13rem;
             }
             img {
               border-radius: 15px;
             }
             h2 {
-              font-size: 20px;
+              font-size: 2rem;
               color: $textColor1;
               @include mobile {
-                font-size: 15px;
+                font-size: 1rem;
               }
             }
             p {
-              font-size: 13px;
+              font-size: 1.1rem;
               color: $textColor1;
               @include mobile {
-                font-size: 10px;
+                font-size: 1rem;
               }
             }
             span {
-              font-size: 12px;
+              font-size: 1rem;
               font-weight: 600;
               @include mobile {
-                font-size: 10px;
+                font-size: 1rem;
               }
             }
           }
@@ -105,18 +130,38 @@
           overflow: hidden;
           justify-content: center;
           flex-direction: column;
+          @include big-mobile {
+            flex: auto;
+            width: auto;
+            height: fit-content;
+          }
+          @include mobile {
+            justify-content: none;
+          }
+
           .img1 {
-            height: 10rem;
+            height: 70%;
             object-fit: cover;
+            @include big-mobile {
+              height: 8rem;
+            }
             @include mobile {
               object-fit: cover;
+
+              height: 50%;
             }
           }
           .img2 {
-            height: 12rem;
+            // height: 12rem;
             object-fit: cover;
             object-position: 0px -20px;
+            @include big-mobile {
+              height: 15rem;
+            }
+
             @include mobile {
+              object-fit: cover;
+              height: 80%;
               object-position: 0px 0px;
             }
           }

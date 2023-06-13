@@ -1,3 +1,5 @@
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+
 export const featuredPortfolio = [
   {
     img: require("./assets/projects/apps/whatever/app.gif"),
@@ -49,5 +51,29 @@ export const designingPortfolio = [
     icon3: require("./assets/icons/py.png"),
     paragraph:
       "A mouse automation app for entering form data and sending emails",
+  },
+];
+
+export const worksData = [
+  {
+    id: "1",
+    icon: require("./assets/experiance/lewagon.png"),
+    title: "Experience",
+    description:
+      `Le wagon coding bootcamp London
+
+
+      A 12 week intensive fullstack development bootcamp learning the fundamentals of MVC app architecture and development, utalising Ruby and the Rails framework, alongside HTML, SASSY/CSS and Javascript`,
+    img: require("./assets/experiance/bootcamp.webp"),
+    img2: require("./assets/experiance/lewagoncrew1.jpg"),
+    link: "https://www.youtube.com/watch?v=jR9xcC7LZD4&t=1s",
+  },
+  {
+    id: "2",
+    title: "About me",
+    description:
+      "I recently converted an old laptop into a desktop, Installed linux on it for something to do. I enjoy fixing and repairing hardware. I spend my leisure time skateboarding and playing tennis! 🤘",
+    img: require("./assets/projects/other/linuxComputer/images/merged.JPG"),
+    img2: require("./assets/myPicture/skating2.gif"),
   },
 ];
