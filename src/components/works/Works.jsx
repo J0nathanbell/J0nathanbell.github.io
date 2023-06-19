@@ -1,69 +1,24 @@
-import { useState } from "react";
-import "./works.scss";
+import React from "react";
+import Carousel from "./Carousel";
 import { worksData } from "../../data.js";
 
-export default function Works() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handleClick = (direction) => {
-    direction === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
-      : setCurrentSlide(
-          currentSlide < worksData.length - 1 ? currentSlide + 1 : 0
-        );
-  };
-
+const Works = () => {
   return (
     <div className="works" id="works">
-      <img
-        src={require("../../assets/icons/down.png")}
-        className="arrow left"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
+      <Carousel>
+        {worksData.map((work, index) => (
+          <div className="carousel-item" key={work.index}>
+            {/* Render your carousel item content here */}
+            <h2>{work.title}</h2>
+            <p>{work.description}</p>
+            <p>{work.index}</p>
 
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        {worksData.map((d) => (
-          <div className="container">
-            <div className="item">
-              <div className="left">
-                <div className="leftcontainer">
-                  <div className="imgcontainer">
-                    <img src={d.icon} alt="" />
-                  </div>
-                  <h2>{d.title}</h2>
-                  <p>
-                    {d.description}
-                    {d.award && (
-                      <a href="../../assets/experiance/diploma.pdf">
-                        {d.award}
-                      </a>
-                    )}
-                  </p>
-                  <span>
-                    <a href="https://www.youtube.com/watch?v=jR9xcC7LZD4&t=1s">
-                      Watch our final show here!
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="right">
-                <img className="img1" src={d.img} alt="" />
-                <img className="img2" src={d.img2} alt="" />
-              </div>
-            </div>
+            {/* Add more content specific to your carousel item */}
           </div>
         ))}
-      </div>
-      <img
-        src={require("../../assets/icons/down.png")}
-        className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      />
+      </Carousel>
     </div>
   );
-}
+};
+
+export default Works;

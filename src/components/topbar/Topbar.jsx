@@ -17,21 +17,21 @@ export default function topbar({ menuOpen, setMenuOpen }) {
             </span>
           </div>
           <div className="iconContainer">
-            <span className="icon">
+            {/* <span className="icon">
               <a href="mailto:jonnybell123@hotmail.com?subject=Enquiry">
                 <EmailIcon />
               </a>
-            </span>
+            </span> */}
             <span className="icon">
               <a href="https://github.com/J0nathanbell">
                 <GitHubIcon />
               </a>
             </span>
-            <span className="icon">
+            {/* <span className="icon">
               <a href="https://www.facebook.com/profile.php?id=100073074377173">
                 <FacebookIcon />
               </a>
-            </span>
+            </span> */}
             <span className="icon">
               <a href="https://www.linkedin.com/in/jonathanbell123/">
                 <LinkedInIcon />

@@ -53,14 +53,17 @@
         }
       }
       .iconContainer {
+        // padding-left: 0.5rem;
         display: flex;
         align-items: center;
         width: 10rem;
         height: 2.5rem;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: unset;
         .icon {
           padding-top: 0.8rem;
+          padding-left: 0.5rem;
+
           overflow: visible;
           @include mobile {
             padding-top: 0rem;

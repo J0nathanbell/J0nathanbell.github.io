@@ -1,163 +1,32 @@
-@import "../../global.scss";
-.works {
-  background-color: $backgroundColor1;
-  color: $textColor1;
-  display: flex;
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  position: relative; // Add position relative to the container
+  justify-content: center;
+  height: 200px;
+  background-color: green;
+  color: #fff;
+}
 
-  .arrow {
-    // z-index: 1; // Increase the z-index to ensure arrows are above the slider
-    height: 70px;
-    cursor: pointer;
-    @include mobile {
-      // position: static;
-    }
-    &.left {
-      left: 100px;
-      transform: rotate(90deg);
-    }
-    &.right {
-      right: 100px;
-      transform: rotate(270deg);
-    }
-  }
-  .slider {
-    height: 18rem;
-    display: flex;
-    position: absolute;
-    // left: 0;
-    // right: 0; // Add right: 0 to stretch the slider to the container width
-    transition: all 0.6s ease-out;
-    overflow: visible;
-    // z-index: 1; // Add a z-index to ensure slider is below the arrows
+.indicators {
+  display: flex;
+  justify-content: center;
+}
 
-    .container {
-      width: 100vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: visible;
-      .item {
-        width: 60rem;
-        height: 40rem;
-        background-color: $backgroundColor2;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 8px 8px 4px -6px rgb(0, 0, 0);
-        @include tablet {
-          width: 35rem;
-        }
-        @include big-mobile {
-          width: 25rem;
-          height: 36rem;
-          flex-direction: column;
-        }
+.indicators > button {
+  margin: 5px;
+}
 
-        @include mobile {
-          width: 23rem;
-          height: 42rem;
-          margin: 10px 0;
-        }
-
-        .left {
-          flex: 4;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: $backgroundColor2;
-          justify-content: center;
-          height: 25rem;
-          background-color: #1d1f23;
-          @include big-mobile {
-            flex: none;
-            height: 18rem;
-          }
-          .leftcontainer {
-            width: 90%;
-            height: 95%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .imgcontainer {
-              display: flex;
-              align-items: flex-start;
-              justify-content: center;
-              width: 13rem;
-            }
-            img {
-              border-radius: 15px;
-            }
-            h2 {
-              font-size: 2rem;
-              color: $textColor1;
-              @include mobile {
-                font-size: 1rem;
-              }
-            }
-            p {
-              font-size: 1.1rem;
-              color: $textColor1;
-              @include mobile {
-                font-size: 1rem;
-              }
-            }
-            span {
-              font-size: 1rem;
-              font-weight: 600;
-              @include mobile {
-                font-size: 1rem;
-              }
-            }
-          }
-        }
-        .right {
-          flex: 8;
-          height: 100%;
-          width: 10rem;
-          display: flex;
-          background-color: $textColor2;
-          overflow: hidden;
-          justify-content: center;
-          flex-direction: column;
-          @include big-mobile {
-            flex: auto;
-            width: auto;
-            height: fit-content;
-          }
-          @include mobile {
-            justify-content: none;
-          }
-
-          .img1 {
-            height: 70%;
-            object-fit: cover;
-            @include big-mobile {
-              height: 8rem;
-            }
-            @include mobile {
-              height: 50%;
-            }
-          }
-          .img2 {
-            // height: 12rem;
-            object-fit: cover;
-            object-position: 0px -20px;
-            @include big-mobile {
-              height: 15rem;
-            }
-
-            @include mobile {
-              object-fit: cover;
-              height: 80%;
-              object-position: 0px 0px;
-            }
-          }
-        }
-      }
-    }
-  }
+.indicators > button.active {
+  background-color: green;
+  color: #fff;
 }
