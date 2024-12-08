@@ -37,7 +37,7 @@ export default function Intro({ menuOpen }) {
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Jonathan Bell</h1>
+          <h1>Jonathan</h1>
           <h3>Some folks describe me as...</h3>
           <h3>
             <span ref={textRef}></span>

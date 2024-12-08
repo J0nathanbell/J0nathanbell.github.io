@@ -2,22 +2,25 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
-import Menu from "./components/menu/Menu";
 import "./app.scss";
-import { useState } from "react";
-
+import { pokemonPortfolio, ipsoPortfolio } from "./data.js";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-
+      <Topbar />
       <div className="sections">
-        <Intro menuOpen={menuOpen}/>
-        <Portfolio/>
-        <Works/>
+        <Intro />
+        {/* Portfolio 1 */}
+        <Portfolio
+          initialData={pokemonPortfolio}
+          list={[{ id: "pokemon", title: "Pokedex" }]}
+        />
+        {/* Portfolio 2 */}
+        <Portfolio
+          initialData={ipsoPortfolio}
+          list={[{ id: "ipso", title: "IPSO Email bot" }]}
+        />
       </div>
     </div>
   );

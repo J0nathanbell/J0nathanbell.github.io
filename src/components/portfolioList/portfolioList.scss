@@ -1,8 +1,10 @@
 @import "../../global.scss";
 .topContainer {
+  margin-top: 2rem;
+
   background-color: $backgroundColor2;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-evenly;
   overflow: hidden;
   @include mobile {
@@ -11,7 +13,6 @@
   .portfolio-list {
     display: flex;
     overflow: visible;
-    font-size: 20rem;
     margin: 0;
     flex-direction: row;
     padding-inline-start: 0px;
@@ -32,7 +33,7 @@
     }
 
     .portfolio-list-item {
-      font-size: 2rem;
+      font-size: 3rem;
       padding: 0.5rem;
       margin: 10px;
       list-style: none;
@@ -55,10 +56,8 @@
 
       &.active {
         transform: translateY(-15px);
-        text-decoration: underline;
         @include mobile {
           transform: translateY(0px);
-          text-decoration: underline;
           scale: 1.4;
         }
 
@@ -90,17 +89,11 @@
 
       &:hover {
         &:not(.active) {
-          &:nth-child(1) {
-            color: $textColor3;
-          }
-          &:nth-child(2) {
-            color: $textColor4;
-          }
-          &:nth-child(3) {
-            color: $textColor5;
-          }
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
           &:nth-child(4) {
-            color: $textColor6;
+            color: $textColor1;
           }
         }
       }

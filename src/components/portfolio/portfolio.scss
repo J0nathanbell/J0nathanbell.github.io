@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @include mobile {
     flex-direction: column;
@@ -16,8 +16,8 @@
 
   .container {
     display: flex;
-    width: 50rem;
-    height: 30rem;
+    width: 80rem;
+    height: auto;
     justify-content: center;
     align-items: center;
 
@@ -28,6 +28,7 @@
     }
 
     .item {
+      margin-top: 2rem;
       flex-direction: column;
       background-color: $backgroundColor1;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
@@ -42,8 +43,8 @@
       }
       .appmedia {
         .appimage {
-          width: 60rem;
-          height: 25rem;
+          width: 70rem;
+          height: 38rem;
           object-fit: cover;
 
           @include mobile {
