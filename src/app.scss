@@ -3,9 +3,9 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 47px);
+    height: calc(100vh);
     position: relative;
-    top: 47px;
+    // top: 47px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
