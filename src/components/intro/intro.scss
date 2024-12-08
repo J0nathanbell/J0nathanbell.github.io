@@ -1,11 +1,12 @@
 @import "../../global.scss";
+@import "./animations.scss";
 
 .intro {
   background-color: $backgroundColor2;
   display: flex;
   padding-top: 10px;
-
-  //  padding top only required for smaller image centering
+  flex-direction: column-reverse;
+  align-items: center;
   @include mobile {
     flex-direction: column;
     align-items: center;
@@ -14,30 +15,50 @@
   .left {
     flex: 0.5;
     display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @include mobile {
       flex: 0.5;
     }
+    .dog {
+      height: 100%;
+      animation: hueChangeMainImage 4s infinite linear;
+      animation-delay: 5s;
+    }
+    .dog2 {
+      animation: hueChangeMainImage 4s infinite linear;
+      animation-delay: 5s;
+      height: 100%;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
 
     .imgContainer {
-      width: 20rem;
-      height: 20rem;
-      background-color: $backgroundColor1;
-      border-radius: 30%;
-      border: 2px solid $textColor1;
+      width: 22rem;
+      height: 22rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      float: right;
-      transition: all 0.4s ease;
       overflow: hidden;
-      &:hover {
-        background-color: rgba($color: #c778dd, $alpha: 0.2);
-        transition: all 0.4s ease;
-        border-radius: 50%;
+      animation: colorCycleImageBackground 5s infinite, ease-out,
+        borderColorAndWidthChange 3s infinite, ease-in-out,
+        borderRadiusCycleWobble 1s infinite, ease-in;
+      .shades {
+        padding-right: 3rem;
+        position: absolute;
+        width: 14rem;
+        height: 8rem;
+        animation: shadesMoveIn 8s ease-out forwards,
+          spin 4.8s infinite linear 4.8s;
+        // animation-delay: 0s, 2s;
       }
+
       @include mobile {
         align-items: flex-start;
         width: 12rem;
@@ -45,25 +66,23 @@
         overflow: hidden;
       }
       img {
-        width: 14rem;
-
-        transition: all 0.8s ease;
-        &.active {
-          filter: invert(100%);
-        }
+        width: 16rem;
+        animation: hueChangeMainImage 4s infinite linear,
+          rotateFaceImage 4.8s infinite linear;
+        animation-delay: 5s, 4.8s;
+        // transition: all 0.8s ease;
         @include mobile {
           width: 9rem;
         }
       }
-      &.active {
-        border: 2px solid $textColor3;
-      }
     }
   }
   .right {
-    flex: 0.5;
+    // flex: 0.5;
+    display: flex;
     position: relative;
-    // border: 5px solid green;
+    justify-content: center;
+    align-items: center;
 
     @include mobile {
       background-color: transparent;
@@ -74,8 +93,8 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      padding-left: 50px;
       justify-content: center;
+      align-items: center;
 
       @include mobile {
         padding-left: 0px;
@@ -155,6 +174,8 @@
         }
 
         .arrow-container {
+          display: flex;
+          justify-content: center;
           width: 10rem;
           height: 5rem;
           // border: 2px solid blue;

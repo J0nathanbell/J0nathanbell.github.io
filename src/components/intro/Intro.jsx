@@ -1,8 +1,9 @@
 import "./intro.scss";
+import "./animations.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
-export default function Intro({ menuOpen }) {
+export default function Intro() {
   const textRef = useRef();
 
   useEffect(() => {
@@ -26,13 +27,28 @@ export default function Intro({ menuOpen }) {
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className={"imgContainer " + (menuOpen && "active")}>
+        <img
+          className={"dog"}
+          src={require("../../assets/myPicture/doglol.gif")}
+          alt=""
+        />
+        <div className={"imgContainer"}>
           <img
-            className={"top " + (menuOpen && "active")}
+            className={"top"}
             src={require("../../assets/myPicture/coolguy3.png")}
             alt=""
           />
+          <img
+            src={require("../../assets/myPicture/shades.png")}
+            className={"shades"}
+            alt=""
+          />
         </div>
+        <img
+          className={"dog2"}
+          src={require("../../assets/myPicture/doglol.gif")}
+          alt=""
+        />
       </div>
       <div className="right">
         <div className="wrapper">
@@ -44,8 +60,8 @@ export default function Intro({ menuOpen }) {
           </h3>
           <a className="arrow-container-link" href="#portfolio">
             <div className="arrow-container">
-              <span className={"arrow-1 " + (menuOpen && "active")}></span>
-              <span className={"arrow-2 " + (menuOpen && "active")}></span>
+              <span className={"arrow-1"}></span>
+              <span className={"arrow-2"}></span>
             </div>
           </a>
         </div>
