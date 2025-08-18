@@ -11,15 +11,38 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1000,
       strings: [
-        "The Giga Chad of Git",
-        "The SCSS Swashbuckler",
-        "A progigy with Python",
-        "Handy with HTML",
-        '"A" NodeJS Ninja',
-        "The wrangler of Rails",
-        "A terminal terminator",
-        "Supreame Ruler of React",
-        "Like Jesus with Javascript",
+        '"A Ninja with NodeJS"',
+        '"The Wrangler of Rails"',
+        '"The Terminal Terminator"',
+        '"Crown-Prince of Python"',
+        '"The Giga-Chad of Git"',
+        '"Thee Sith Lord of SCSS"',
+        '"High Priest of HTML"',
+        '"Supreame-Ruler of React"',
+        '"Like Jesus with Javascript"',
+        '"The Absolute Dictator of Databases"',
+        '"Like Napoleon with NextJS"',
+        '"A Virtuoso of VS-Code"',
+        '"God-Emporer of Google cloud"',
+        '"Jedi Master of Json"',
+        '"The Ubermench of Ubuntu"',
+        '"A Super Saiyan with Selenium"',
+        '"The Final-Boss of Front-end"',
+        '"The Autocrat of REST APIs"',
+        '"A Connoisseur of Code Review"',
+        '"The Pharaoh of Functional Programming"',
+        '"The Wizard of Webpack"',
+        '"A Visionary with Version Control"',
+        '"The Sage of State Management"',
+        '"The Oracle of Object-Oriented Programming"',
+        '"A Prestidigitator with Package Managers"',
+        '"A Sorcerer of Software Architecture"',
+        '"The Prophet of Progressive Web Apps"',
+        '"The Gladiator of Github"',
+        '"The Executioner of Errors"',
+        '"The Necromancer of Nested Loops"',
+        '"The Assassin of Async Hell"',
+        '"The Demon Prince of Debugging"',
       ],
     });
   }, []);
@@ -54,7 +77,7 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Jonathan</h1>
-          <h3>Some folks describe me as...</h3>
+          <h3>But some folks have known to call me...</h3>
           <h3>
             <span ref={textRef}></span>
           </h3>

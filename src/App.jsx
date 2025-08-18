@@ -7,15 +7,12 @@ import { pokemonPortfolio, ipsoPortfolio } from "./data.js";
 function App() {
   return (
     <div className="app">
-      {/* <Topbar /> */}
       <div className="sections">
         <Intro />
-        {/* Portfolio 1 */}
         <Portfolio
           initialData={pokemonPortfolio}
           list={[{ id: "pokemon", title: "Pokedex" }]}
         />
-        {/* Portfolio 2 */}
         <Portfolio
           initialData={ipsoPortfolio}
           list={[{ id: "ipso", title: "IPSO Email bot" }]}

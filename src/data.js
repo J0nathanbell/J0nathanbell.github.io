@@ -1,7 +1,7 @@
 export const pokemonPortfolio = [
   {
     img: require("./assets/projects/apps/pokedex/pokemon.gif"),
-    appLink: "https://j0nathanbell.github.io/pokemon/",
+    // appLink: "https://j0nathanbell.github.io/pokemon/",
     link: "https://github.com/J0nathanbell/pokemon",
     link2: "https://j0nathanbell.github.io/pokemon/",
     paragraph: "A fun Pokedex app made with Vanilla JS",
@@ -10,7 +10,7 @@ export const pokemonPortfolio = [
 export const ipsoPortfolio = [
   {
     img: require("./assets/projects/apps/rejectionClose/python.gif"),
-    appLink: "https://github.com/J0nathanbell/large_screen_rejection_close",
+    // appLink: "https://github.com/J0nathanbell/large_screen_rejection_close",
     link: "https://github.com/J0nathanbell/large_screen_rejection_close",
     paragraph:
       "A mouse automation app for entering form data and sending emails",

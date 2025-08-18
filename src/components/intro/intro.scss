@@ -2,7 +2,7 @@
 @import "./animations.scss";
 
 .intro {
-  background-color: $backgroundColor2;
+  // background-color: $backgroundColor2;
   display: flex;
   padding-top: 10px;
   flex-direction: column-reverse;
@@ -40,19 +40,20 @@
     }
 
     .imgContainer {
-      width: 22rem;
-      height: 22rem;
+      width: 18rem;
+      height: 18rem;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      animation: colorCycleImageBackground 5s infinite, ease-out,
-        borderColorAndWidthChange 3s infinite, ease-in-out,
+      animation: colorCycleImageBackground 4.8s infinite, ease-out,
+        borderColorAndWidthChange 4.8s infinite, ease-in-out,
         borderRadiusCycleWobble 1s infinite, ease-in;
+      animation-delay: 4.8s;
       .shades {
-        padding-right: 3rem;
+        padding-right: 2rem;
         position: absolute;
-        width: 14rem;
+        width: 11rem;
         height: 8rem;
         animation: shadesMoveIn 8s ease-out forwards,
           spin 4.8s infinite linear 4.8s;
@@ -66,7 +67,7 @@
         overflow: hidden;
       }
       img {
-        width: 16rem;
+        width: 13rem;
         animation: hueChangeMainImage 4s infinite linear,
           rotateFaceImage 4.8s infinite linear;
         animation-delay: 5s, 4.8s;
@@ -78,11 +79,12 @@
     }
   }
   .right {
-    // flex: 0.5;
+    flex: 0.5;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
+    padding-top: 0rem;
 
     @include mobile {
       background-color: transparent;
