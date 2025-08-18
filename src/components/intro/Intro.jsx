@@ -75,7 +75,7 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hi There, I'm </h2>
           <h1>Jonathan</h1>
           <h3>But some folks have known to call me...</h3>
           <h3>
