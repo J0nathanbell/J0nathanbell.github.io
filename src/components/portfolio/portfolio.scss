@@ -38,9 +38,9 @@
       }
       .appmedia {
         .appimage {
-          width: 70rem;
-          height: 38rem;
-          object-fit: cover;
+          width: 50rem;
+          height: 30rem;
+          object-fit: fill;
           @include mobile {
             width: 12em;
             height: 10rem;
