@@ -123,7 +123,8 @@
         }
       }
       h2 {
-        color: $textColor2;
+        // color: $textColor2;
+        color: blue;
         font-size: 35px;
         @include mobile {
           font-size: 1rem;

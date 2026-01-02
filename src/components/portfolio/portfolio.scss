@@ -13,8 +13,8 @@
   }
   .container {
     display: flex;
-    width: 80rem;
-    height: auto;
+    width: 50rem;
+    height: 40rem;
     justify-content: center;
     align-items: center;
     @include mobile {
@@ -23,15 +23,14 @@
       flex-direction: column;
     }
     .item {
-      margin-top: 2rem;
       flex-direction: column;
       background-color: $backgroundColor1;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
         rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
       border-radius: 8px;
       display: flex;
-      height: auto;
-      width: auto;
+      // width: 50rem;
+      // height: 40rem;
       @include mobile {
         width: 15rem;
         flex-direction: column;
@@ -55,9 +54,10 @@
         }
       }
       .paragraph-box {
-        margin: 1rem;
+        // margin: 1rem;
         color: $textColor1;
         text-align: center;
+        height: 3rem;
         @include mobile {
           justify-content: center;
           display: flex;
