@@ -1,15 +1,14 @@
 .app {
   height: 100vh;
-  background-image: url("./assets/myPicture/background.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  // background-image: url("./assets/myPicture/background.jpg");
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  // background-size: cover; /* Resize the background image to cover the entire container */
 
   .sections {
-    width: 100%;
+    // width: 100%;
     height: calc(100vh);
     position: relative;
-    // top: 47px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
@@ -17,7 +16,7 @@
       display: none;
     }
     > * {
-      width: 100vw;
+      // width: 100vw;
       height: calc(100vh);
       scroll-snap-align: start;
     }

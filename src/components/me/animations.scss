@@ -56,36 +56,36 @@
 
 @keyframes colorCycleImageBackground {
   0% {
-    background-color: $textColor2;
+    background-color: orange;
   }
   25% {
-    background-color: $textColor5;
+    background-color: green;
   }
   50% {
-    background-color: $textColor6;
+    background-color: blue;
   }
   75% {
-    background-color: $textColor3;
+    background-color: green;
   }
   100% {
-    background-color: $textColor4;
+    background-color: orange;
   }
 }
 @keyframes borderColorAndWidthChange {
   0% {
-    border: 10px solid $textColor6;
+    border: 10px solid blue;
   }
   25% {
-    border: 20px solid $textColor3;
+    border: 10px solid red;
   }
   50% {
-    border: 30px solid $textColor4;
+    border: 10px solid orange;
   }
   75% {
-    border: 20px solid $textColor4;
+    border: 10px solid red;
   }
   100% {
-    border: 10px solid $textColor5;
+    border: 10px solid blue;
   }
 }
 

@@ -1,5 +1,6 @@
 // import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
+import Me from "./components/me/Me";
 import Portfolio from "./components/portfolio/Portfolio";
 import "./app.scss";
 import { pokemonPortfolio, ipsoPortfolio } from "./data.js";
@@ -13,6 +14,7 @@ function App() {
     <div className="app">
       <div className="sections">
         <Intro />
+        <Me />
         <Portfolio
           initialData={pokemonPortfolio}
           list={[{ id: "pokemon", title: "Pokedex" }]}
