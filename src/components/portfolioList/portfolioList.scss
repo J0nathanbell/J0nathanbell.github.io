@@ -40,7 +40,7 @@
       transition: all 0.4s ease;
       cursor: pointer;
       background: transparent;
-      color: blue;
+      color: $textColor1;
       z-index: 1;
       @include tablet {
         font-size: 1.5rem;
@@ -54,38 +54,38 @@
         overflow: visible;
       }
 
-      // &.active {
-      //   transform: translateY(-15px);
-      //   @include mobile {
-      //     transform: translateY(0px);
-      //     scale: 1.4;
-      //   }
+      &.active {
+        transform: translateY(-15px);
+        @include mobile {
+          transform: translateY(0px);
+          scale: 1.4;
+        }
 
-      //   &:nth-child(1) {
-      //     color: $textColor3;
-      //     &:hover {
-      //       color: $textColor3;
-      //     }
-      //   }
-      //   &:nth-child(2) {
-      //     color: $textColor4;
-      //     &:hover {
-      //       color: $textColor4;
-      //     }
-      //   }
-      //   &:nth-child(3) {
-      //     color: $textColor5;
-      //     &:hover {
-      //       color: $textColor5;
-      //     }
-      //   }
-      //   &:nth-child(4) {
-      //     color: $textColor6;
-      //     &:hover {
-      //       color: $textColor6;
-      //     }
-      //   }
-      // }
+        &:nth-child(1) {
+          color: $textColor3;
+          &:hover {
+            color: $textColor3;
+          }
+        }
+        &:nth-child(2) {
+          color: $textColor4;
+          &:hover {
+            color: $textColor4;
+          }
+        }
+        &:nth-child(3) {
+          color: $textColor5;
+          &:hover {
+            color: $textColor5;
+          }
+        }
+        &:nth-child(4) {
+          color: $textColor6;
+          &:hover {
+            color: $textColor6;
+          }
+        }
+      }
 
       &:hover {
         &:not(.active) {
