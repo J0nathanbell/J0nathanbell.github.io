@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b8830d7.css",
-    "main.js": "/static/js/main.0d91dd12.js",
+    "main.css": "/static/css/main.61c51895.css",
+    "main.js": "/static/js/main.b36cd7fd.js",
     "static/media/python.gif": "/static/media/python.df2329a00a1b1794c6b6.gif",
     "static/media/skating2.gif": "/static/media/skating2.4d4881cf7a10dfa3c23f.gif",
     "static/media/pokemon.gif": "/static/media/pokemon.ef7b2d848515488cb458.gif",
     "static/media/merged.JPG": "/static/media/merged.2c5281ba12288a7c9dac.JPG",
     "static/media/coolguy3.png": "/static/media/coolguy3.a38ad208e7641de17423.png",
-    "static/media/doglol.gif": "/static/media/doglol.1b6c6887b2e7662c6f73.gif",
-    "static/media/background.jpg": "/static/media/background.4ce08618a2ef3480a949.jpg",
+    "static/media/doglolcropped1.gif": "/static/media/doglolcropped1.b238f224f7a3907df9d7.gif",
     "static/media/lewagoncrew1.jpg": "/static/media/lewagoncrew1.71a6c6676bbc391c9ad7.jpg",
     "static/media/bootcamp.webp": "/static/media/bootcamp.22f6a5948cafa47d90cc.webp",
     "static/media/shades.png": "/static/media/shades.db208219c74c804df627.png",
     "static/media/lewagon.png": "/static/media/lewagon.0d6089e0c4f426c623f5.png",
     "index.html": "/index.html",
-    "main.3b8830d7.css.map": "/static/css/main.3b8830d7.css.map",
-    "main.0d91dd12.js.map": "/static/js/main.0d91dd12.js.map"
+    "main.61c51895.css.map": "/static/css/main.61c51895.css.map",
+    "main.b36cd7fd.js.map": "/static/js/main.b36cd7fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b8830d7.css",
-    "static/js/main.0d91dd12.js"
+    "static/css/main.61c51895.css",
+    "static/js/main.b36cd7fd.js"
   ]
 }
