@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  height: 100%; // Added: Inherit full section height
+  overflow: hidden; // Ensure no internal scroll
   @include mobile {
     flex-direction: column;
     // justify-content: flex-start;
@@ -25,21 +27,24 @@
     .item {
       flex-direction: column;
       background-color: $backgroundColor1;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
-        rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+      box-shadow:
+        rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+        rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
       border-radius: 8px;
-      display: flex;      @include mobile {
+      display: flex;
+      @include mobile {
         width: 15rem;
         flex-direction: column;
       }
-      .appmedia {      
+      .appmedia {
         .applink {
           display: flex;
           justify-content: center;
           align-items: center;
           @include mobile {
           }
-            .appimage {
+          .appimage {
             width: 100%;
             height: 100%;
             object-fit: cover;

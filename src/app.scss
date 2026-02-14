@@ -1,24 +1,34 @@
+html {
+  scroll-snap-type: y mandatory;
+}
 .app {
-  min-height: 100vh; // Changed from height to allow scrolling
-  background-image: url("/assets/myPicture/clouds.jpg"); // Uncommented & updated path
+  height: 100vh;
+  background-image: url("/assets/myPicture/clouds.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; // Key: Keeps background stationary on scroll
+  background-attachment: fixed;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .sections {
-    height: 100%; // Changed to 100% for full app height
+    height: auto;
     position: relative;
-    overflow-y: auto; // Added: Enables vertical scrolling
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none; // for firefox
-    &::-webkit-scrollbar {
-      display: none;
-    }
+
     > * {
-      height: 100vh; // Kept for snap sections
+      height: 100vh;
+      min-height: 100vh;
       scroll-snap-align: start;
+      scroll-snap-stop: always;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; // Added: Prevent internal scroll/overflow breaking snap
     }
   }
 }
