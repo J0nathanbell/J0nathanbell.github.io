@@ -53,9 +53,9 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        animation: colorCycleImageBackground 4.8s infinite, ease-out,
-          borderColorAndWidthChange 4.8s infinite, ease-in-out,
-          borderRadiusCycleWobble 1s infinite, ease-in;
+        // animation: colorCycleImageBackground 4.8s infinite, ease-out,
+        //   borderColorAndWidthChange 4.8s infinite, ease-in-out,
+        //   borderRadiusCycleWobble 1s infinite, ease-in;
         animation-delay: 4.8s;
         .shades {
           padding-right: 2rem;
