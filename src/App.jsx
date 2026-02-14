@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="app">
       <div className="sections">
-        <Intro />
+        {/* <Intro /> */}
         <Me />
         <Portfolio
           initialData={pokemonPortfolio}
