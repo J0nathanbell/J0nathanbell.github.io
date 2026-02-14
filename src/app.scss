@@ -1,23 +1,23 @@
 .app {
-  height: 100vh;
-  // background-image: url("./assets/myPicture/background.jpg");
-  // background-position: center; /* Center the image */
-  // background-repeat: no-repeat; /* Do not repeat the image */
-  // background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 100vh; // Changed from height to allow scrolling
+  background-image: url("/assets/myPicture/clouds.jpg"); // Uncommented & updated path
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; // Key: Keeps background stationary on scroll
 
   .sections {
-    // width: 100%;
-    height: calc(100vh);
+    height: 100%; // Changed to 100% for full app height
     position: relative;
+    overflow-y: auto; // Added: Enables vertical scrolling
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scrollbar-width: none; //for firefox
+    scrollbar-width: none; // for firefox
     &::-webkit-scrollbar {
       display: none;
     }
     > * {
-      // width: 100vw;
-      height: calc(100vh);
+      height: 100vh; // Kept for snap sections
       scroll-snap-align: start;
     }
   }
