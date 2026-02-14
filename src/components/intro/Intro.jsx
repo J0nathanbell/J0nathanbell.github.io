@@ -5,7 +5,6 @@ export default function Intro() {
 
   return (
     <div className="intro" id="intro">
-        <p>twat</p>
     </div>
   );
 }

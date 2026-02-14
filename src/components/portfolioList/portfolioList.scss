@@ -1,101 +1,69 @@
 @import "../../global.scss";
+
 .topContainer {
   margin-top: 2rem;
-
-  // background-color: $backgroundColor2;
   display: flex;
-  align-items: right;
   justify-content: space-evenly;
+  align-items: center; // Changed from 'right' (invalid) to 'center' or 'flex-end'
   overflow: hidden;
+
   @include mobile {
     overflow: visible;
   }
+
   .portfolio-list {
     display: flex;
-    overflow: visible;
-    margin: 0;
     flex-direction: row;
-    padding-inline-start: 0px;
+    margin: 0;
+    padding: 0; // Simplified padding-inline-start
+    list-style: none; // Moved from item to list for better practice
+    overflow: visible;
 
     @include mobile {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-
-      overflow: visible;
-      display: flex;
-      align-items: center;
+      padding: 1rem 0;
       flex-direction: column;
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-inline-start: 0px;
+      align-items: center;
     }
 
     .portfolio-list-item {
+      // Note: object-fit only works on <img> or <video>, removed if this is a <li>
       font-size: 3rem;
       padding: 0.5rem;
       margin: 10px;
-      list-style: none;
       transition: all 0.4s ease;
       cursor: pointer;
-      background: transparent;
       color: $textColor1;
       z-index: 1;
-      @include tablet {
-        font-size: 1.5rem;
-      }
-      @include big-mobile {
-        font-size: 1rem;
-      }
+
+      @include tablet { font-size: 1.5rem; }
+      @include big-mobile { font-size: 1rem; }
       @include mobile {
-        padding: 0rem;
+        padding: 0;
         font-size: 1rem;
-        overflow: visible;
       }
 
+      // Logic for Active State
       &.active {
         transform: translateY(-15px);
+        
         @include mobile {
-          transform: translateY(0px);
+          transform: translateY(0);
           scale: 1.4;
         }
 
-        &:nth-child(1) {
-          color: $textColor3;
-          &:hover {
-            color: $textColor3;
-          }
-        }
-        &:nth-child(2) {
-          color: $textColor4;
-          &:hover {
-            color: $textColor4;
-          }
-        }
-        &:nth-child(3) {
-          color: $textColor5;
-          &:hover {
-            color: $textColor5;
-          }
-        }
-        &:nth-child(4) {
-          color: $textColor6;
-          &:hover {
-            color: $textColor6;
-          }
-        }
+        // Mapping colors to children
+        &:nth-child(1) { color: $textColor3; }
+        &:nth-child(2) { color: $textColor4; }
+        &:nth-child(3) { color: $textColor5; }
+        &:nth-child(4) { color: $textColor6; }
+        
+        // Ensure active color stays on hover
+        &:hover { color: inherit; } 
       }
 
-      &:hover {
-        &:not(.active) {
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(3),
-          &:nth-child(4) {
-            color: $textColor1;
-          }
-        }
+      // Hover logic for non-active items
+      &:hover:not(.active) {
+        color: $textColor1; 
       }
     }
   }
